@@ -3,10 +3,361 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>FastProject - Конструкторское бюро общего машиностроения</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
-    <h1>ghbdt2</h1>
+    <!--Header start-->
+    <header class="page__header header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="index.html" class="header__link">
+            <svg class="header__svg">
+
+            </svg>
+          </a>
+        </div>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+        <!--Main Menu start-->
+        <nav class="header__navigation main-nav main-nav--closed">
+          <ul class="main-nav__menu-list menu-list">
+            <li class="menu-list__item"></li>
+            <li class="menu-list__item"></li>
+            <li class="menu-list__item"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page__main main">
+      <h1 class="vissually-hidden">FastProject - Конструкторское бюро общего машиностроения</h1>
+      <section class="main__promo promo">
+        <div class="promo__conteiner container">
+          <h2 class="promo__title">Разработка и оптимизация технологических процессов</h2>
+          <ul class="promo__list-description">
+            <li class="promo__item-description">Разработка и оптимизация существующих технологических процессов</li>
+            <li class="promo__item-description">Разработка технологической оснастки</li>
+            <li class="promo__item-description">Подбор оборудования и инструмента</li>
+          </ul>
+          <a href="#" class="promo__link">Заказать проект</a>
+        </div>
+        <img src="img/exploded-part.jpg" srcset="img/exploded-part@2x.jpg" alt="Разнесенный вид" class="promo__img">
+      </section>
+      <section class="main__advantages advantages">
+        <div class="advantages__container container">
+          <h2 class="advantages__title">Преимущества работы с нами</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <b class="advantages__item-title">Гибкий подход</b>
+              <p class="advantages__item-description">Нам Важен результат!</p>
+              <p class="advantages__item-description">Учитываем все пожелания заказчика даже если они появляются в процессе проектирования. Вносим все правки!</p>
+            </li>
+            <li class="advantages__item">
+              <b class="advantages__item-title">Конфиденциальность</b>
+              <p class="advantages__item-description">Подписываем соглашение о неразглашении.</p>
+              <p class="advantages__item-description">Вы являетесь правообладателем изделия!</p>
+            </li>
+            <li class="advantages__item">
+              <b class="advantages__item-title">Оперативная связь</b>
+              <p class="advantages__item-description">Менеджер всегда на связи по телефону и whatsapp:</p>
+              <a href="tel:8 (800) 123 45 67" class="advantages__link">8 (800) 123 45 67</a>
+              <a href="#" class="advantages__whatsapp">whatsapp</a>
+            </li>
+            <li class="advantages__item">
+              <b class="advantages__item-title">Гарантия</b>
+              <p class="advantages__item-description">Все работы оформляются через договор.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__services services">
+        <div class="services__container container">
+          <h2 class="services__title">Услуги</h2>
+          <ol class="services__list">
+            <li class="services__item"><a href="#" class="services__link"><img src="img/kb.jpg" srcset="img/kb@2x.jpg" alt="Работа КБ" class="services__img"><span class="services__text">Конструкторские услуги</span></a></li>
+            <li class="services__item"><a href="#" class="services__link"><img src="img/reducer.jpg" srcset="img/reducer@2x.jpg" alt="Редуктор" class="services__img"><span class="services__text">3D-моделирование и промышленный дизайн</span></a></li>
+            <li class="services__item"><a href="#" class="services__link"><img src="img/drawing.jpg" srcset="img/drawing@2x.jpg" alt="Чертежи" class="services__img"><span class="services__text">Технологические услуги</span></a></li>
+            <li class="services__item"><a href="#" class="services__link"><img src="img/photo_4.jpg" srcset="img/photo_4@2x.jpg" alt="Измерения" class="services__img"><span class="services__text">Измерительные услуги</span></a></li>
+            <li class="services__item"><a href="#" class="services__link"><img src="img/photo_5.jpg" srcset="img/photo_5@2x.jpg" alt="Сертификация" class="services__img"><span class="services__text">Разработка документации  для регистрации и сертификации продукции</span></a></li>
+            <li class="services__item"><a href="#" class="services__link"><img src="img/photo_6.jpg" srcset="img/photo_6@2x.jpg" alt="Тезническая документация" class="services__img"><span class="services__text">Техническая документация</span></a></li>
+          </ol>
+        </div>
+      </section>
+      <section class="main__progress progress">
+        <div class="progress__container container">
+          <h2 class="visually-hidden">Достижения</h2>
+          <ul class="progress__list">
+            <li class="progress__item">
+              <b>230</b>
+              <p>довольных клиентов</p>
+            </li>
+            <li class="progress__item">
+              <b>>50</b>
+              <p>профессионалов в команде</p>
+            </li>
+            <li class="progress__item">
+              <b>320</b>
+              <p>выполненных проектов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main_plan plan">
+        <div class="plan__container container">
+          <h2 class="plan__title">Порядок выполнения конструкторских работ</h2>
+          <ol class="plan__list">
+            <li class="plan__item">
+              <b>Сбор исходных данных</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Техническое задание на проектирование</li>
+                <li class="plan__sublist-item">Эскиз / Фото / Видео аналогов</li>
+                <li class="plan__sublist-item">Образцы деталей</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Оценка задания</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Уточнения по ТЗ</li>
+                <li class="plan__sublist-item"> Встреча с инженером-конструктором, при необходимости</li>
+                <li class="plan__sublist-item">Расчёт объема, бюджета и сроков выполнения</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Документальное оформление</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Согласование и подписание Договора и приложений к нему</li>
+                <li class="plan__sublist-item">Оплата</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Выполнение проекта</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">3D-моделирование</li>
+                <li class="plan__sublist-item">Согласование</li>
+                <li class="plan__sublist-item">Внесение правок, при необходимости</li>
+                <li class="plan__sublist-item">Разработка КД</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Проверка конструкторской документации</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Нормоконтроль</li>
+                <li class="plan__sublist-item">Технологический контроль</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Предоставление результата разработки</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Направление результата в необходимом формате</li>
+                <li class="plan__sublist-item">Приемка комплекта Заказчиком</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Запуск и конструкторское сопровождение производства</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Изготовление опытного образца</li>
+                <li class="plan__sublist-item">Приемо-сдаточные испытания</li>
+                <li class="plan__sublist-item">Сопровождение серийного производства</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="main__portfolio portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title">Наше портфолио</h2>
+          <ul class="portfolio__list-group">
+            <li class="portfolio__item-group">Все</li>
+            <li class="portfolio__item-group">Оборудование</li>
+            <li class="portfolio__item-group">Механизмы</li>
+            <li class="portfolio__item-group">Реверс-инжиниринг</li>
+          </ul>
+          <ul class="portfolio__list-img">
+            <li class="portfolio__item-img">
+              <img src="img/img_1.jpg" srcset="img/img_1@2x.jpg" alt="Портфолио чертеж">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__reviews reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title">Отзывы наших клиентов</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <ul class="reviews__list-star">
+                <li class="reviews__item-star">
+                  <svg class="reviews__star"></svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star"></svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star"></svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star"></svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star"></svg>
+                </li>
+              </ul>
+              <p class="reviews__text">Сотрудники компании быстро и качественно разработали всю необходимую конструкторскую документацию для моего проекта. Особую благодарность хочу выразить инженеру-конструктору Олегу Смирнову, который оказывал конструкторскую поддержку на этапе производства.</p>
+              <p class="reviews__author">Иван Сергеевич Иванов</p>
+              <p class="reviews__company">ООО «Проект»</p>
+              <p class="reviews__date">24.05.2023</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__about about">
+        <div class="about__container container">
+          <h2 class="about__title">О компании</h2>
+          <p class="about__text">Проектно-конструкторское бюро FastProject оказывает услуги по разработке конструкторской, технологической и эксплуатационной документации. Мы работаем как на аутсорсинге, так и проектно.  
+            Конструкторское бюро FastProject реализовывает проекты в сфере машиностроения, охранных и противопожарных систем. Мы осуществляем полный цикл создания нового продукта — от идеи до производства: </p>
+          <ul class="about__text">
+            <li>помогаем с подготовкой технического задания,</li>
+            <li>подготавливаем техническую документацию,</li>
+            <li>разрабатываем рабочую документацию, </li>
+            <li>составляем проектно-сметную документацию,</li>
+            <li>согласовываем в государственных органах и госэкспертизе,</li>
+            <li>производим техническое сопровождение проекта.</li>
+          </ul>
+          <p class="about__text">Большинство вопросов и задач решаем дистанционно, а также выезжаем на объект. Наши инженеры имеют профильное образование и богатый опыт ( от 15 лет) проектирования и запуска в производство. Мы всегда находим оптимальное решения поставленных задач, обеспечиваем соответствие качества продукции и услуг ожиданиям заказчика, договорным обязательствам, нормативно-технической документации и международным стандартам! FastProject входит в группу компаний Fastgroup, которая начала свою историю с 1995 года и зарекомендовала себя не только на территории РФ, но и за ее пределами. Имеем свое представительство в крупных городах России : Москва, Санкт-Петербург, а так же и за границей: Объединённые Арабские Эмираты (Дубай), Казахстан (Астана, Атырау, Кызыл-Орда, Актау, Уральск, Актобе). Собственные производственные базы в: Москве, Твери, Новосибирске, Алмате, Атыра.</p>
+        </div>
+      </section>
+      <section class="main__partners partners">
+        <div class="partners__container container">
+          <h2 class="partners__title">Нам доверяют</h2>
+          <ul class="partners__list">
+            <li class="partners__items"><svg class="partners__logo"></svg></li>
+            <li class="partners__items"><svg class="partners__logo"></svg></li>
+            <li class="partners__items"><svg class="partners__logo"></svg></li>
+          </ul>
+          <p class="partners__text">Мы уже работаем с крупными компаниями как Газпром, Роснефть, Транснефть, КазТрансОил, CPPE, CNPC, WPK, KGM и др. и открыты для сотрудничества как с компаниями и промышленными организациями, так и с частными лицами по всей России и за ее пределами.</p>
+        </div>
+      </section>
+      <section class="main__documents documents">
+        <div class="documents__container container">
+          <h2 class="documents__title">Компания FastProject имеет</h2>
+          <ul class="documents__list">
+            <li class="documents__item">Сертификат качества ИСО 9001-2015</li>
+            <li class="documents__item">Лицензию «Проектирования систем противопожарной защиты»</li>
+            <li class="documents__item">Лицензию «Производство и реализация противопожарной техники и оборудования»</li>
+            <li class="documents__item">Лицензию «Экспертиза технических решений»</li>
+            <li class="documents__item">Лицензию «Выполнение строительных и монтажных работ»</li>
+            <li class="documents__item">Лицензию «Выполнение технического обслуживания противопожарных средств»</li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__news news">
+        <div class="news__container container">
+          <ul class="news__list">
+            <li>
+              <news__item>
+                <img src="" alt="" class="news__img">
+                <p class="news__date">29 сентября 2023</p>
+                <h3 class="news__title">Техзадание для реверс-инжиниринга: план создания</h3>
+                <p class="news__text">Расскажем, что должно быть в техническом задании, если вам нужен реверс-инжиниринг.</p>
+              </news__item>
+            </li>
+          </ul>
+          <ul class="news__slider-list">
+            <li class="news__slider-item">
+              <button class="news__button news__button--prev">
+                <span class="visually-hidden">Предыдущая новость</span>
+              </button>
+            </li>
+            <li class="news__slider-item">
+              <a href="#" class="news__slider-link">Смотреть все новости</a>
+            </li>
+            <li class="news__slider-item">
+              <button class="news__button news__button--next">
+                <span class="visually-hidden">Следущая новость</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__form form">
+        <div class="form__container container">
+          <h2 class="form__title">Напишите нам</h2>
+          <p class="form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <form action="#" class="form__date" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <label class="form__label">
+                <input name="name" type="text" class="form__input" placeholder="Ваше имя*" required>
+              </label>
+              <label class="form__label">
+                <input name="email" type="email" class="form__input" placeholder="Электронная почта*" required>
+              </label>
+              <label class="form__label">
+                <input name="tel" type="tel" class="form__input" placeholder="Телефон*" required>
+              </label>
+              <label class="form__label">
+                <input name="company" type="text" class="form__input" placeholder="Компания">
+              </label>
+              <label class="form__label">
+                <input name="inn" type="text" class="form__input" placeholder="ИНН">
+              </label>
+              <label class="form__label">
+                <textarea name="message" id="form__message" class="form__textarea">Ваше сообщение*</textarea>
+              </label>
+              <div class="form__file-content">
+                <input name="file" type="file" class="form__file">
+                <span>(до 6 файлов, до 2 Мб)</span>
+              </div>
+              <label class="form__label-checkbox">
+                <input name="check" type="checkbox" class="form__checkbox">\
+                <span>Я согласен на обработку персональных данных</span>
+              </label>
+            </fieldset>
+            <button class="form__submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="main__contacts contacts">
+        <div class="contacts__container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__wrapper-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643282831751!5m2!1sru!2sru" allowfullscreen="" title="Адресс html Academy" class="contacts__map"></iframe>
+            <img src="img/google_map.jpg" srcset="img/google_map@2x.jpg" alt="Контакты">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__logo">
+        <a href="index.html" class="footer__link">
+          <svg class="footer__svg">
+
+          </svg>
+        </a>
+      </div>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
+        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Портфолио</a></li>
+        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
+        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Заказчикам</a></li>
+        <li class="footer__menu-item"><a href="#" class="footer__menu-link">НОВОСТИ</a></li>
+        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+      </ul>
+      <h3 class="footer__title">Услуги</h3>
+      <ul class="footer_services-list">
+        <ki class="footer__services-item"><a href="" class="footer_services-link"></a></ki>
+        <ki class="footer__services-item"><a href="" class="footer_services-link"></a></ki>
+        <ki class="footer__services-item"><a href="" class="footer_services-link"></a></ki>
+        <ki class="footer__services-item"><a href="" class="footer_services-link"></a></ki>
+        <ki class="footer__services-item"><a href="" class="footer_services-link"></a></ki>
+        <ki class="footer__services-item"><a href="" class="footer_services-link"></a></ki>
+      </ul>
+      <a href="tel^+78001234567" class="footer__link">8 (800) 123 45 67</a>
+      <button class="footer__callback-phone">Заказать обратный звонок</button>
+      <a href="#" class="footer__social">мы в соцсетях</a>
+      <a href="mailto:info@fastproject.ru" class="footer__link-email">info@fastproject.ru</a>
+      <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      <p class="footer__text">© 2007-2023 Fast Project. Все права защищены</p>
+    </footer>
   </body>
 </html>
