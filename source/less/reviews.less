@@ -1,8 +1,4 @@
 .reviews__title {
-  font-size: 30 px;
-  line-height: 39px;
-  font-weight: 400;
-  color: #333333;
   text-align: center;
 }
 
@@ -24,8 +20,12 @@
   list-style-type: none;
 }
 
+.reviews__star path {
+  stroke: @colorDark;
+}
+
 .reviews__star--rate {
-  fill: #333333;
+  fill: @colorDark;
 }
 
 .reviews__text {
@@ -49,7 +49,7 @@
   text-align: center;
   font-size: 10px;
   line-height: 12px;
-  color: #00a0e3;
+  color: @colorBlue;
 }
 
 .reviews__company a {

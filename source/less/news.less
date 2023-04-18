@@ -1,13 +1,9 @@
 .news {
-  background-color: #f5f5f5;
+  background-color: @colorLGray;
 }
 
 .news__title {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 39px;
   text-align: center;
-  color: #333333;
 }
 
 .news__list {
@@ -25,22 +21,20 @@
   padding: 0;
   font-size: 12px;
   line-height: 19px;
-  color: #00a0e3;
+  color: @colorBlue;
 }
 
-.news__title {
+.news__subtitle {
   margin: 0;
   padding: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
-  color: #333333;
+  color: @colorDark;
   text-align: center;
 }
 
-.news__text {
-  color: #333333;
-}
+
 
 .news__slider-list {
   display: flex;
@@ -70,14 +64,5 @@
 }
 
 .news__slider-link {
-  display: block;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: 500;
-  color: #333333;
-  text-decoration: none;
-  box-sizing: border-box;
-  border: 1px solid #00a0e3;
-  border-radius: 10px 10px 10px 0px;
   padding: 14px 20px;
 }
