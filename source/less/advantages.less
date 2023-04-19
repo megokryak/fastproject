@@ -9,10 +9,46 @@
 }
 
 .advantages__list {
-  margin: 0;
+  margin: 39px 0 0 0;
   padding: 0;
   list-style-type: none;
   color: @colorWhite;
+}
+
+.advantages__item {
+  padding-left: 66px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__item--first::before {
+  background-image: url("../img/preimusch_icon_1.svg");
+}
+
+.advantages__item--second::before {
+  background-image: url("../img/preimusch_icon_2.svg");
+}
+
+.advantages__item--third::before {
+  background-image: url("../img/preimusch_icon_3.svg");
+}
+
+.advantages__item--fouth::before {
+  background-image: url("../img/preimusch_icon_4.svg");
+}
+
+.advantages__item:not(:first-child) {
+  margin-top: 35px;
 }
 
 .advantages__item-title {
@@ -22,7 +58,7 @@
 }
 
 .advantages__item-description {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
@@ -30,6 +66,30 @@
 
 .advantages__link,
 .advantages__whatsapp {
+  display: block;
   text-decoration: none;
   color: @colorWhite;
+}
+
+.advantages__link {
+  margin-top: 9px;
+  letter-spacing: 0.07em;
+}
+
+.advantages__whatsapp {
+  margin-top: 4px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.advantages__whatsapp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/form_icon_whatsapp.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

@@ -3,9 +3,17 @@
 }
 
 .plan__list {
-  margin: 0;
+  margin: 39px 0 0 0;
   padding: 0;
   list-style-type: none;
+}
+
+.plan__item {
+  padding-left: 51px;
+}
+
+.plan__item:not(:first-child) {
+  margin-top: 23px;
 }
 
 .plan__item b {
@@ -16,13 +24,18 @@
 }
 
 .plan__sublist {
-  margin: 0;
-  padding: 0;
+  margin: 7px 0 0 0;
+  padding: 0 0 0 19px;
   list-style-type: none;
 }
 
 .plan__sublist-item {
+  position: relative;
   color: @colorDark;
+}
+
+.plan__sublist-item:not(:first-child) {
+  margin-top: 6px;
 }
 
 .plan__sublist-item a {

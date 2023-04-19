@@ -1,13 +1,18 @@
 .promo {
+  padding-top: 21px;
   background-color: @colorLGray;
+}
+
+.promo__title {
+  letter-spacing: 0.04em;
 }
 
 .promo__list-description {
   list-style-type: none;
-  line-height: 18px;
+  line-height: 20px;
   color: @colorBlue;
   padding: 0;
-  margin: 0;
+  margin: 14px 0 0 0;
 }
 
 .promo__item-description {
@@ -15,14 +20,29 @@
 }
 
 .promo__item-description:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
-//.promo__link {
-  
-//}
+.promo__link {
+  margin-top: 31px;
+  letter-spacing: 0.04em;
+  padding: 14px 34px 14px 22px;
+  position: relative;
+}
+
+.promo__link::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 21px;
+  width: 4px;
+  height: 9px;
+  background-image: url("../img/strelka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .promo__img {
   display: block;
-  margin: 0;
+  margin: -20px 0 0 0;
 }
