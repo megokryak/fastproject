@@ -9,7 +9,7 @@
 }
 
 .documents__list {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
   list-style-type: none;
 }
@@ -18,4 +18,8 @@
   font-weight: 500;
   color: @colorBlue;
   text-decoration: underline;
+}
+
+.documents__item:not(:first-child) {
+  margin-top: 10px;
 }

@@ -1,3 +1,7 @@
+.reviews {
+  background-color: @colorLGray;
+}
+
 .reviews__title {
   text-align: center;
 }
@@ -12,10 +16,7 @@
   display: flex;
   justify-content: space-between;
   width: 184px;
-}
-
-.reviews__list-star {
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0;
   list-style-type: none;
 }
@@ -29,11 +30,12 @@
 }
 
 .reviews__text {
-  margin: 0;
-  padding: 0;
+  margin: 24px 0 0 0;
+  padding: 0 52px;
   letter-spacing: 0.02em;
   text-align: center;
   font-weight: 400;
+  line-height: 22px;
 }
 
 .reviews__author,
@@ -45,7 +47,12 @@
   font-weight: 400;
 }
 
+.reviews__author {
+  margin: 26px 0 0 0;
+}
+
 .reviews__company {
+  margin: 4px 0 0 0;
   text-align: center;
   font-size: 10px;
   line-height: 12px;
@@ -55,4 +62,8 @@
 .reviews__company a {
   text-decoration: none;
   color: inherit;
+}
+
+.reviews__date {
+  margin: 11px 0 0 0;
 }

@@ -11,11 +11,21 @@
 .form__text {
   color: @colorWhite;
   text-align: center;
+  margin: 4px 0 0 0;
+  padding: 0 5px;
 }
 
 .form__fieldset {
   border: none;
+  padding: 0;
+  margin: 11px 0 0 0;
 }
+
+.form__label:not(:first-child) {
+  display: block;
+  margin: 23px 0 0 0;
+}
+
 
 .form__input {
   display: block;
@@ -53,6 +63,7 @@
 
 .form__file-content {
   position: relative;
+  margin: 22px 0 0 0;
 }
 
 .form__file {
@@ -66,15 +77,72 @@
 
 .form__file-check {
   color: @colorBlue;
+  padding: 0 0 0 26px;
+  position: relative;
+}
+
+.form__file-check::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/skrepka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form__file-info {
   color: @colorGray;
 }
 
+.form__label-checkbox {
+  margin-top: 11px;
+  display: block;
+}
+
 .form__label-checkbox span {
+  margin: 0;
+  display: block;
   font-size: 12px;
   line-height: 17px;
   font-weight: 400;
   color: @colorWhite;
+  padding: 0 0 0 28px;
+}
+
+.form__label-checkbox span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid @colorWhite;
+}
+
+.form__submit {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-top: 29px;
+  letter-spacing: 0.06em;
+  padding-right: 31px;
+  position: relative;
+}
+
+.form__submit::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 4px;
+  height: 9px;
+  background-image: url(../img/strelka.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
 }

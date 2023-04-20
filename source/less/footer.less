@@ -1,9 +1,18 @@
+.footer {
+  padding-top: 38px;
+}
+
 .footer__link-logo {
   text-decoration: none;
   display: flex;
   font-size: 12px;
   line-height: 16px;
   color: @colorDark;
+}
+
+.footer__link-logo span {
+  margin-left: 20px;
+  margin-top: -3px;
 }
 
 .footer__menu-list,
@@ -22,16 +31,37 @@
   color: @colorDark;
 }
 
+.footer__menu-list {
+  margin-top: 26px;
+}
+
+.footer__menu-item:not(:first-child) {
+  margin-top: 8px;
+}
+
 .footer__title {
+  margin-top: 10px;
   font-size: 12px;
   line-height: 15px;
   color: @colorGray;
   text-transform: uppercase;
 }
 
-.footer_services-link {
+.footer__services-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 14px 0 0 0;
+}
+
+.footer__services-item:not(:first-child) {
+  margin-top: 8px;
+}
+
+.footer__services-link {
+  font-size: 12px;
   line-height: 19px;
   text-transform: none;
+  color: @colorGray;
 }
 
 .footer__link {
