@@ -61,10 +61,12 @@
   font-size: 12px;
   line-height: 19px;
   text-transform: none;
-  color: @colorGray;
+  color: @colorDark;
+  text-decoration: none;
 }
 
 .footer__link {
+  margin: 30px 0 0 0;
   text-decoration: none;
   display: block;
   font-weight: 600;
@@ -74,9 +76,11 @@
 }
 
 .footer__callback-phone {
+  margin: 10px 0 0 1px;
   padding: 14px 20px;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .footer__social,
@@ -88,7 +92,30 @@
   text-decoration: none;
 }
 
+.footer__social {
+  margin-top: 20px;
+  padding-left: 29px;
+  position: relative;
+}
+
+.footer__social::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon_vk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__link-email {
+  margin-top: 10px;
+}
+
 .footer__policy {
+  margin-top: 29px;
   display: block;
   font-size: 12px;
   line-height: 15px;
@@ -98,7 +125,7 @@
 }
 
 .footer__text {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
   font-size: 12px;
   line-height: 15px;
