@@ -1,7 +1,28 @@
 .header {
   background-color: @colorLGray;
   padding-bottom: 15px;
+  transition: 1s;
 }
+
+.header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header--nojs .header__navigation {
+  display: block;
+}
+
+.header--closed-menu .header__navigation {
+  display: none;
+}
+
+.header--open-menu .header__navigation {
+  display: block;
+}
+
 
 .header__link {
   display: flex;
@@ -34,4 +55,9 @@
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+.header--open-menu .header__toggle,
+.header--nojs .header__toggle {
+  background-image: url(../img/burger.svg);
 }
