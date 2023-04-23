@@ -8,7 +8,7 @@
   </head>
   <body class="page ">
     <!--Header start-->
-    <header class="page__header header">
+    <header class="page__header header header--nojs header--closed-menu">
       <div class="header__container container">
         <div class="header__logo">
           <a href="index.html" class="header__link">
@@ -31,16 +31,41 @@
           <span class="visually-hidden">Открыть меню/Закрыть меню</span>
         </button>
       </div>
-        <!--Main Menu start-->
-        <nav class="header__navigation main-nav">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__menu-list menu-list">
-              <li class="menu-list__item"></li>
-              <li class="menu-list__item"></li>
-              <li class="menu-list__item"></li>
-            </ul>
+      <!--Main Menu start-->
+      <nav class="header__navigation main-nav">
+        <div class="main-nav__container container">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">О компании</a></li>
+            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Портфолио</a></li>
+            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Цены</a></li>
+            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Заказчикам</a></li>
+            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Новости</a></li>
+            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+          </ul>
+          <h3 class="main-nav__title">Услуги</h3>
+          <ul class="main-nav__services-list">
+            <li class="main-nav__services-item"><a href="" class="main-nav__services-link">Конструкторские услуги</a></li>
+            <li class="main-nav__services-item"><a href="" class="main-nav__services-link">3D-моделирование и промышленный дизайн</a></li>
+            <li class="main-nav__services-item"><a href="" class="main-nav__services-link">Технологические услуги</a></li>
+            <li class="main-nav__services-item"><a href="" class="main-nav__services-link">Измерительные услуги</a></li>
+            <li class="main-nav__services-item"><a href="" class="main-nav__services-link">Техническая документация</a></li>
+            <li class="main-nav__services-item"><a href="" class="main-nav__services-link">Разработка документации для регистрации и сертификации продукции</a></li>
+          </ul>
+        </div>
+        <div class="main-nav__wrapper container">
+          <a href="tel:88001234567" class="main-nav__link">8 (800) 123 45 67</a>
+          <button class="main-nav__callback-phone btn-link">Заказать обратный звонок</button>
+          <div class="main-nav__wrapper-info">
+            <a href="#" class="main-nav__social">мы в соцсетях</a>
+            <div class="main-nav__toggle-color-wrapper">
+              <button class="main-nav__toggle-color" type="button">
+                <span class="visually-hidden">Переключить цвет</span>
+              </button>
+            </div>
+            <a href="mailto:info@fastproject.ru" class="main-nav__link-email">info@fastproject.ru</a>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
     <main class="page__main main">
       <h1 class="visually-hidden">FastProject - Конструкторское бюро общего машиностроения</h1>
@@ -380,7 +405,7 @@
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643282831751!5m2!1sru!2sru" allowfullscreen="" title="Адресс html Academy" class="contacts__map"></iframe>
-            <img class="contacts__img" src="img/google_map.jpg" srcset="img/google_map@2x.jpg" alt="Контакты" width="360" height="360">
+            <img class="contacts__img contacts__img--nojs" src="img/google_map.jpg" srcset="img/google_map@2x.jpg" alt="Контакты" width="360" height="360">
           </div>
         </div>
       </section>
@@ -429,5 +454,7 @@
         <p class="footer__text">© 2007-2023 Fast Project. Все права защищены</p>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

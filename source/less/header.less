@@ -9,6 +9,10 @@
   top: 0;
   left: 0;
   z-index: 100;
+
+  @media (min-width: @t-width) {
+    position: relative;
+  }
 }
 
 .header--nojs .header__navigation {
@@ -17,6 +21,10 @@
 
 .header--closed-menu .header__navigation {
   display: none;
+
+  @media (min-width: @t-width) {
+    display: block;
+  }
 }
 
 .header--open-menu .header__navigation {
@@ -35,12 +43,23 @@
   justify-content: space-between;
 }
 
+.header__svg {
+  @media (min-width: @t-width) {
+    width: 160px;
+    height: 48px;
+  }
+}
+
 .header__link span {
   margin-top: -3px;
   margin-left: 15px;
   font-size: 9.5px;
   line-height: 12.35px;
   color: @colorDark;
+
+  @media (min-width: @t-width) {
+    display: none;
+  }
 }
 
 .header__toggle {
@@ -55,6 +74,10 @@
   border: 0;
   outline: 0;
   cursor: pointer;
+
+  @media (min-width: @t-width) {
+    display: none;
+  }
 }
 
 .header--open-menu .header__toggle,
