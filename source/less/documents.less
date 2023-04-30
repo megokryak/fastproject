@@ -6,12 +6,25 @@
   font-weight: 600;
   color: @colorDark;
   text-align: center;
+
+  @media (min-width: @t-width) {
+    font-size: 21px;
+    line-height: 28px;
+  }
 }
 
 .documents__list {
   margin: 20px 0 0 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @t-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .documents__item {

@@ -31,11 +31,14 @@
   display: block;
 }
 
-
 .header__link {
   display: flex;
   text-decoration: none;
   margin-top: 19px;
+
+  @media (min-width : @t-width) {
+    margin-top: 31px;
+  }
 }
 
 .header__container {

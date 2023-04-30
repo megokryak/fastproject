@@ -2,6 +2,12 @@
   background-color: @colorBlack;
 }
 
+.form__container {
+  @media (min-width: @t-width) {
+    padding: 0 272px;
+  }
+}
+
 .form__title {
   color: @colorWhite;
   text-align: center;
@@ -15,15 +21,47 @@
   padding: 0 5px;
 }
 
+.form__date {
+  @media (min-width: @t-width) {
+    position: relative;
+  }
+}
+
 .form__fieldset {
   border: none;
   padding: 0;
   margin: 11px 0 0 0;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form__label {
+  @media (min-width: @t-width) {
+    width: 100%;
+  }
 }
 
 .form__label:not(:first-child) {
   display: block;
   margin: 23px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 20px 0 0 0;
+  }
+}
+
+.form__label--email,
+.form__label--phone,
+.form__label--company,
+.form__label--inn {
+  @media (min-width: @t-width) {
+    min-width: 318px;
+    flex-basis: 318px;
+  }
 }
 
 
@@ -35,6 +73,10 @@
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    line-height: 17px;
+  }
 }
 
 .form__input::placeholder {
@@ -55,6 +97,10 @@
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    height: 132px;
+  }
 }
 
 .form__textarea::placeholder {
@@ -64,6 +110,11 @@
 .form__file-content {
   position: relative;
   margin: 22px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
 }
 
 .form__file {
@@ -79,6 +130,11 @@
   color: @colorBlue;
   padding: 0 0 0 26px;
   position: relative;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-break: 17px;
+  }
 }
 
 .form__file-check::before {
@@ -100,6 +156,13 @@
 .form__label-checkbox {
   margin-top: 11px;
   display: block;
+
+  @media (min-width: @t-width) {
+    width: 65%;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 29px;
+  }
 }
 
 .form__label-checkbox span {
@@ -110,6 +173,12 @@
   font-weight: 400;
   color: @colorWhite;
   padding: 0 0 0 28px;
+  position: relative;
+
+  @media (min-width: @t-width) {
+    letter-spacing: 0.095em;
+    padding: 0 0 0 31px
+  }
 }
 
 .form__label-checkbox span::before {
@@ -122,6 +191,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid @colorWhite;
+
+  @media (min-width: @t-width) {
+    top: -1px;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .form__submit {
@@ -132,6 +207,15 @@
   letter-spacing: 0.06em;
   padding-right: 31px;
   position: relative;
+
+  @media (min-width: @t-width) {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 65px;
+  }
 }
 
 .form__submit::after {
@@ -145,4 +229,11 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-width: @t-width) {
+    width: 16px;
+    height: 16px;
+    right: 29px;
+    top: calc(50% - 8px);
+    background-image: url(../img/icon_button-arrow_t.svg);
+  }
 }

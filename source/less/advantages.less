@@ -1,11 +1,20 @@
 .advantages {
   background: @gradient;
   border-radius: 20px 20px 20px 0px;
+
+  @media (min-width: @t-width) {
+    border-radius: 36px 36px 36px 0px;
+  }
 }
 
 .advantages__title {
   color: @colorWhite;
   text-align: center;
+
+  @media (min-width: @t-width) {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 .advantages__list {
@@ -13,11 +22,21 @@
   padding: 0;
   list-style-type: none;
   color: @colorWhite;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    margin: 52px 0 0 0;
+  }
 }
 
 .advantages__item {
   padding-left: 66px;
   position: relative;
+
+  @media (min-width: @t-width) {
+    padding-left: 0;
+    padding-top: 96px;
+  }
 
   &::before {
     content: "";
@@ -28,33 +47,85 @@
     height: 50px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @t-width) {
+      width: 66px;
+      height: 66px;
+    }
+  }
+}
+
+.advantages__item--first {
+  @media (min-width: @t-width) {
+    min-width: 200px;
+    flex-basis: 200px;
   }
 }
 
 .advantages__item--first::before {
   background-image: url("../img/preimusch_icon_1.svg");
+
+  @media (min-width: @t-width) {
+    background-image: url("../img/preimuschestva_icon1.svg");
+  }
+}
+
+.advantages__item--second {
+  @media (min-width: @t-width) {
+    width: 245px;
+    flex-basis: 245px;
+  }
 }
 
 .advantages__item--second::before {
   background-image: url("../img/preimusch_icon_2.svg");
+
+  @media (min-width: @t-width) {
+    background-image: url("../img/preimuschestva_icon2.svg");
+  }
+}
+
+.advantages__item--third {
+  @media (min-width: @t-width) {
+    min-width: 216px;
+    flex-basis: 216px;
+  }
 }
 
 .advantages__item--third::before {
   background-image: url("../img/preimusch_icon_3.svg");
+
+  @media (min-width: @t-width) {
+    background-image: url("../img/preimuschestva_icon3.svg");
+  }
 }
 
 .advantages__item--fouth::before {
   background-image: url("../img/preimusch_icon_4.svg");
+
+  @media (min-width: @t-width) {
+    background-image: url("../img/preimuschestva_icon4.svg");
+  }
 }
 
 .advantages__item:not(:first-child) {
   margin-top: 35px;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+    margin-left: 36px;
+  }
 }
 
 .advantages__item-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
+
+  @media (min-width: @t-width) {
+    font-size: 21px;
+    line-height: 28px;
+  }
 }
 
 .advantages__item-description {
@@ -62,6 +133,18 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 19px 0 0 0;
+  }
+}
+
+.advantages__item-description br {
+  @media (min-width: @t-width) {
+    display: none;
+  }
 }
 
 .advantages__link,
@@ -74,12 +157,22 @@
 .advantages__link {
   margin-top: 9px;
   letter-spacing: 0.07em;
+
+  @media (min-width: @t-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 21px;
+  }
 }
 
 .advantages__whatsapp {
   margin-top: 4px;
   padding-left: 26px;
   position: relative;
+
+  @media (min-width: @t-width) {
+    margin-top: 14px;
+  }
 }
 
 .advantages__whatsapp::before {

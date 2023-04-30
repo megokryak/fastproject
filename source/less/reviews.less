@@ -19,6 +19,10 @@
   margin: 40px auto 0 auto;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @t-width) {
+    margin-top: 50px;
+  }
 }
 
 .reviews__star path {
@@ -36,6 +40,13 @@
   text-align: center;
   font-weight: 400;
   line-height: 22px;
+
+  @media (min-width: @t-width) {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 48px 0 0 0;
+    padding: 0 35px;
+  }
 }
 
 .reviews__author,
@@ -45,10 +56,19 @@
   line-height: 12px;
   letter-spacing: 0.01em;
   font-weight: 400;
+
+  @media (min-width: @t-width) {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .reviews__author {
   margin: 26px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 48px 0 0 0;
+  }
 }
 
 .reviews__company {
@@ -57,6 +77,12 @@
   font-size: 10px;
   line-height: 12px;
   color: @colorBlue;
+
+  @media (min-width: @t-width) {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 6px 0 0 0;
+  }
 }
 
 .reviews__company a {
@@ -66,4 +92,47 @@
 
 .reviews__date {
   margin: 11px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: 16px 0 0 0;
+  }
+}
+
+.reviews__pagination-list {
+  display: none;
+
+  @media (min-width: @t-width) {
+     display: flex;
+     justify-content: space-between;
+     list-style-type: none;
+     margin: -201px 0 0 0;
+     padding: 0 50px;
+  }
+}
+
+
+.reviews__pagination-button {
+  border: none;
+  background-color: @colorGray;
+}
+
+.reviews__pagination-button--prev,
+.reviews__pagination-button--next {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/Arrow_rew.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reviews__pagination-button--prev {
+  @media (min-width: @t-width) {
+    
+  }
+}
+
+.reviews__pagination-button--next {
+  transform: rotate(180deg);
+  
 }

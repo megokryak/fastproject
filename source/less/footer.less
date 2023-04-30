@@ -1,5 +1,23 @@
 .footer {
   padding-top: 38px;
+
+  @media (min-width: @t-width) {
+    padding-top: 61px;
+  }
+}
+
+.footer__container {
+  @media (min-width: @t-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__logo {
+  @media (min-width: @t-width) {
+    width: 100%;
+    order: 1;
+  }
 }
 
 .footer__link-logo {
@@ -8,11 +26,32 @@
   font-size: 12px;
   line-height: 16px;
   color: @colorDark;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .footer__link-logo span {
   margin-left: 20px;
   margin-top: -3px;
+
+  @media (min-width: @t-width) {
+    margin-left: 30px;
+    margin-top: -4px;
+  }
+}
+
+.footer__wrapper-menu {
+  margin-top: 26px;
+
+  @media (min-width: @t-width) {
+    order: 3;
+    width: 100%;
+    margin-top: 47px;
+    display: flex;
+  }
 }
 
 .footer__menu-list,
@@ -29,14 +68,25 @@
   font-size: 12px;
   line-height: 15px;
   color: @colorDark;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
-.footer__menu-list {
-  margin-top: 26px;
+.footer_services-link {
+  @media (min-width: @t-width) {
+    text-transform: none;
+  }
 }
 
 .footer__menu-item:not(:first-child) {
   margin-top: 8px;
+
+  @media (min-width: @t-width) {
+    margin-top: 15px;
+  }
 }
 
 .footer__title {
@@ -45,16 +95,29 @@
   line-height: 15px;
   color: @colorGray;
   text-transform: uppercase;
+
+  @media (min-width: @t-width) {
+    display: none;
+  }
 }
 
 .footer__services-list {
   list-style-type: none;
   padding: 0;
   margin: 14px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+    margin-left: 81px;
+  }
 }
 
 .footer__services-item:not(:first-child) {
   margin-top: 8px;
+
+  @media (min-width: @t-width) {
+    margin-top: 15px;
+  }
 }
 
 .footer__services-link {
@@ -63,6 +126,21 @@
   text-transform: none;
   color: @colorDark;
   text-decoration: none;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.footer__wrapper-info {
+  @media (min-width: @t-width) {
+    order: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 49px;
+  }
 }
 
 .footer__link {
@@ -73,6 +151,12 @@
   font-size: 16px;
   line-height: 20px;
   color: @colorDark;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+    margin-left: auto;
+    order: 3;
+  }
 }
 
 .footer__callback-phone {
@@ -81,6 +165,14 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+
+  @media (min-width: @t-width) {
+    margin: 0 0 0 33px;
+    order: 4;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 13px 23px;
+  }
 }
 
 .footer__social,
@@ -90,12 +182,23 @@
   line-height: 21px;
   color: @colorDark;
   text-decoration: none;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .footer__social {
   margin-top: 20px;
   padding-left: 29px;
   position: relative;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+    margin-left: 44px;
+    order: 2;
+  }
 }
 
 .footer__social::before {
@@ -108,20 +211,50 @@
   background-image: url("../img/icon_vk.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: @t-width) {
+    top: 0;
+  }
 }
 
 .footer__link-email {
   margin-top: 10px;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+    order: 1;
+  }
+}
+
+.footer__svg {
+  @media (min-width: @t-width) {
+    width: 160px;
+    height: 48px;
+  }
+}
+
+.footer__wrapper-policy {
+  margin-top: 29px;
+
+  @media (min-width: @t-width) {
+    order: 4;
+    width: 100%;
+    margin-top: 50px;
+  }
 }
 
 .footer__policy {
-  margin-top: 29px;
   display: block;
   font-size: 12px;
   line-height: 15px;
   color: @colorBlue;
   text-decoration: none;
   letter-spacing: 0.02em;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 .footer__text {
@@ -131,4 +264,11 @@
   line-height: 15px;
   color: @colorDGray;
   letter-spacing: 0.02em;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 19px 0 0 0;
+    letter-spacing: 0.01em;
+  }
 }

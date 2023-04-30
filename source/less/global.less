@@ -11,6 +11,11 @@ body {
   color: @colorDark;
   background-color: @colorWhite;
   margin: 0;
+
+  @media (min-width: @t-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .visually-hidden {
@@ -28,6 +33,10 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (min-width: @t-width) {
+    padding: 0 120px;
+  }
 }
 
 h1 {
@@ -46,6 +55,11 @@ h2 {
   line-height: 40px;
   font-weight: 400;
   color: @colorDark;
+
+  @media (min-width: @t-width) {
+    font-size: 44px;
+    line-height: 58px;
+  }
 }
 
 h3 {

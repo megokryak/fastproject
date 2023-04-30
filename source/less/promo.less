@@ -5,6 +5,21 @@
 
 .promo__title {
   letter-spacing: 0.04em;
+
+  @media (min-width: @t-width) {
+    display: inline-block;
+    font-size: 48px;
+    line-height: 63px;
+    padding-right: 250px;
+    margin-top: 76px;
+    letter-spacing: 0;
+  }
+}
+
+.promo__title br {
+  @media (min-width: @t-width) {
+     display: none;
+  }
 }
 
 .promo__list-description {
@@ -13,6 +28,13 @@
   color: @colorBlue;
   padding: 0;
   margin: 14px 0 0 0;
+
+  @media (min-width: @t-width) {
+    width: 320px;
+    margin: 18px 0 0 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .promo__item-description {
@@ -28,6 +50,11 @@
   letter-spacing: 0.04em;
   padding: 14px 34px 14px 22px;
   position: relative;
+
+  @media (min-width: @t-width) {
+    margin-top: 49px;
+    padding: 18px 55px 18px 27px;
+  }
 }
 
 .promo__link::after {
@@ -40,9 +67,75 @@
   background-image: url("../img/strelka.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @t-width) {
+    top: 20px;
+    right: 27px;  
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/icon_button-arrow.svg");
+  }
 }
 
 .promo__img {
   display: block;
   margin: -20px 0 0 0;
+
+  @media (min-width: @t-width) {
+    margin: -495px 0 0 0;
+  }
 }
+
+.promo__pagination-list {
+  display: none;
+
+  @media (min-width: @t-width) {
+     display: flex;
+     list-style-type: none;
+     margin: -165px 0 0 0;
+     padding: 0;
+  }
+}
+
+.promo__pagination-item { 
+  margin-left: 6px;
+}
+
+.promo__pagination-item:nth-child(2) {
+  margin-left: 20px;
+}
+
+.promo__pagination-item:first-child {
+  margin-left: 0;
+}
+
+.promo__pagination-item:last-child {
+  margin-left: 20px;
+}
+
+.promo__pagination-button {
+  border: none;
+  background-color: @colorGray;
+  width: 30px;
+  height: 3px;
+  border: 1.5px;
+}
+
+.promo__pagination-button--active {
+  background-color: @colorBlue;
+}
+
+.promo__pagination-button--prev,
+.promo__pagination-button--next {
+  background-color: transparent;
+  width: 34px;
+  height: 34px;
+  background-image: url("../img/Arrow_nav.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.promo__pagination-button--next {
+  transform: rotate(180deg);
+}
+

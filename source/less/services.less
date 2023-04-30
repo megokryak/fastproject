@@ -1,3 +1,9 @@
+.services__container {
+  @media (min-width: @t-width) {
+    padding: 0 30px;
+  }
+}
+
 .services__title {
   text-align: center;
 }
@@ -6,10 +12,22 @@
   margin: 39px 0 0 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @t-width) {
+    margin: 60px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    column-gap: 33px;
+    row-gap: 59px;
+  }
 }
 
 .services__item:not(:first-child) {
   margin-top: 28px;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+  }
 }
 
 .services__link {
@@ -26,6 +44,14 @@
   color: @colorDark;
   position: relative;
 
+  @media (min-width: @t-width) {
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 156px;
+    padding-right: 90px;
+    margin-top: 32px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -36,7 +62,17 @@
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @t-width) {
+      width: 34px;
+      height: 34px;
+      background-image: url("../img/Arrow_t.svg");
+    }
   }
+}
+
+.services__text br {
+  display: none;
 }
 
 .services__item span.services__text::before {
@@ -48,34 +84,65 @@
     height: 102px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @t-width) {
+      width: 106px;
+      height: 135px;
+      top: -72px;
+      left: 30px;
+    }
 }
 
 .services__item--first span.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_1.svg");
+
+    @media (min-width: @t-width) {
+      background-image: url("../img/Uslugi_icon_1t.svg");
+    }
 }
 
 .services__item--second span.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_2.svg");
+
+    @media (min-width: @t-width) {
+      background-image: url("../img/Uslugi_icon_2t.svg");
+    }
 }
 
 .services__item--third span.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_3.svg");
+
+    @media (min-width: @t-width) {
+      background-image: url("../img/Uslugi_icon_3t.svg");
+    }
 }
 
 .services__item--fouth span.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_4.svg");
+
+    @media (min-width: @t-width) {
+      background-image: url("../img/Uslugi_icon_4t.svg");
+    }
 }
 
 .services__item--fifth span.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_5.svg");
+
+    @media (min-width: @t-width) {
+      background-image: url("../img/Uslugi_icon_5t.svg");
+    }
 }
 
 .services__item--sixth span.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_6.svg");
+
+    @media (min-width: @t-width) {
+      background-image: url("../img/Uslugi_icon_6t.svg");
+    }
 }
