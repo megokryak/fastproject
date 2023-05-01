@@ -50,9 +50,9 @@
             <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Портфолио</a></li>
             <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Цены</a></li>
             <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Заказчикам</a></li>
-            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Новости</a></li>
+            <li class="main-nav__menu-item main-nav__menu-item--news"><a href="#" class="main-nav__menu-link ">Новости</a></li>
             <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link">Контакты</a></li>
-            <li class="main-nav__menu-item"><a href="#" class="main-nav__menu-link main-nav__menu-link--active">Услуги</a>
+            <li class="main-nav__menu-item main-nav__menu-item--submenu"><a href="#" class="main-nav__menu-link main-nav__menu-link--active">Услуги</a>
               <ul class="main-nav__services-list">
                 <li class="main-nav__services-item"><a href="" class="main-nav__services-link">Конструкторские услуги</a></li>
                 <li class="main-nav__services-item"><a href="" class="main-nav__services-link">3D-моделирование и промышленный дизайн</a></li>
@@ -83,7 +83,7 @@
       <h1 class="visually-hidden">FastProject - Конструкторское бюро общего машиностроения</h1>
       <section class="main__promo promo">
         <div class="promo__conteiner container">
-          <h2 class="promo__title">Разработка<br> и оптимизация технологических процессов</h2>
+          <h2 class="promo__title">Разработка <br> и оптимизация технологических процессов</h2>
           <ul class="promo__list-description">
             <li class="promo__item-description">Разработка и оптимизация существующих технологических процессов</li>
             <li class="promo__item-description">Разработка технологической оснастки</li>
@@ -91,7 +91,21 @@
           </ul>
           <a href="#" class="promo__link btn">Заказать проект</a>
         </div>
-        <img src="img/exploded-part.png" alt="Разнесенный вид" class="promo__img" width="360" height="339">
+        <picture>
+          <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop_card.webp 1x, img/thailand-desktop_card@2x.webp 2x">
+          <source type="image/webp" srcset="img/thailand-mobile.webp 1x, img/thailand-mobile@2x.webp 2x">-->
+          <source media="(min-width: 1200px)" srcset="img/img_1_screen.png">
+          <img src="img/exploded-part.png" alt="Разнесенный вид" class="promo__img" width="360" height="339">
+        </picture>
+        <div class="promo__conteiner container">
+          <ul class="promo__pagination-list">
+            <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--prev"><span class="visually-hidden">Предыдущий слайд</span></button></li>
+            <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--active"><span class="visually-hidden">1 слайд</span></button></li>
+            <li class="promo__pagination-item"><button class="promo__pagination-button"><span class="visually-hidden">2 слайд</span></button></li>
+            <li class="promo__pagination-item"><button class="promo__pagination-button"><span class="visually-hidden">3 слайд</span></button></li>
+            <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
+          </ul>
+        </div>
       </section>
       <section class="main__advantages advantages">
         <div class="advantages__container container">
@@ -170,15 +184,15 @@
           <ul class="progress__list">
             <li class="progress__item">
               <b>230</b>
-              <p>довольных клиентов</p>
+              <p>довольных<br>клиентов</p>
             </li>
             <li class="progress__item">
               <b>>50</b>
-              <p>профессионалов в команде</p>
+              <p>профессионалов<br>в команде</p>
             </li>
             <li class="progress__item">
               <b>320</b>
-              <p>выполненных проектов</p>
+              <p>выполненных<br>проектов</p>
             </li>
           </ul>
         </div>
@@ -251,11 +265,36 @@
             <li class="portfolio__item-group"><a href="#" class="portfolio__item-link portfolio__item-link--active">Все</a></li>
             <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Оборудование</a></li>
             <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Механизмы</a></li>
-            <!--<li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Реверс-инжиниринг</a></li>-->
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Реверс-инжиниринг</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Стартапы</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Металлоконструкции</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">КМД</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Электротехническое проектирование</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Технологическая документация</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Технологическая оснастка</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Штампы</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Промышленный дизайн 3</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">3D-моделирование</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">3D-визуализация</a></li>
           </ul>
           <ul class="portfolio__list-img">
             <li class="portfolio__item-img">
               <img src="img/img_1.jpg" srcset="img/img_1@2x.jpg" alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_2.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_3.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_4.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_5.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_6.jpg"  alt="Портфолио чертеж" width="290" height="290">
             </li>
           </ul>
         </div>
@@ -299,21 +338,31 @@
             </li>
           </ul>
         </div>
+        <ul class="reviews__pagination-list">
+          <li class="reviews__pagination-item"><button class="reviews__pagination-button reviews__pagination-button--prev"><span class="visually-hidden">Предыдущий слайд</span></button></li>
+          <li class="reviews__pagination-item"><button class="reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
+        </ul>
       </section>
       <section class="main__about about">
         <div class="about__container container">
           <h2 class="about__title">О компании</h2>
-          <p class="about__text">Проектно-конструкторское бюро FastProject оказывает услуги по разработке конструкторской, технологической и эксплуатационной документации. Мы работаем как на аутсорсинге, так и проектно.</p>
-          <p class="about__text">Конструкторское бюро FastProject реализовывает проекты в сфере машиностроения, охранных и противопожарных систем. Мы осуществляем полный цикл создания нового продукта — от идеи до производства:</p>
-          <ul class="about__text">
-            <li>помогаем с подготовкой технического задания,</li>
-            <li>подготавливаем техническую документацию,</li>
-            <li>разрабатываем рабочую документацию, </li>
-            <li>составляем проектно-сметную документацию,</li>
-            <li>согласовываем в государственных органах и госэкспертизе,</li>
-            <li>производим техническое сопровождение проекта.</li>
-          </ul>
-          <p class="about__text">Большинство вопросов и задач решаем дистанционно, а также выезжаем на объект. <br><br>Наши инженеры имеют профильное образование и богатый опыт ( от 15 лет) проектирования и запуска в производство. Мы всегда находим оптимальное решения поставленных задач, обеспечиваем соответствие качества продукции и услуг ожиданиям заказчика, договорным обязательствам, нормативно-технической документации и международным стандартам!<br><br>FastProject входит в группу компаний Fastgroup, которая начала свою историю с 1995 года и зарекомендовала себя не только на территории РФ, но и за ее пределами. <br><br>Имеем свое представительство в крупных городах России : Москва, Санкт-Петербург, а так же и за границей: Объединённые Арабские Эмираты (Дубай), Казахстан (Астана, Атырау, Кызыл-Орда, Актау, Уральск, Актобе). <br><br>Собственные производственные базы в: Москве, Твери, Новосибирске, Алмате, Атыра.</p>
+          <div class="about__wrapper">
+            <div class="about__wrapper--grid1">
+              <p class="about__text about__text--grid1">Проектно-конструкторское бюро FastProject оказывает услуги по разработке конструкторской, технологической и эксплуатационной документации. Мы работаем как на аутсорсинге, так и проектно.</p>
+              <p class="about__text about__text--grid1">Конструкторское бюро FastProject реализовывает проекты в сфере машиностроения, охранных и противопожарных систем. Мы осуществляем полный цикл создания нового продукта — от идеи до производства:</p>
+              <ul class="about__text about__text--grid1">
+                <li>помогаем с подготовкой технического задания,</li>
+                <li>подготавливаем техническую документацию,</li>
+                <li>разрабатываем рабочую документацию, </li>
+                <li>составляем проектно-сметную документацию,</li>
+                <li>согласовываем в государственных органах и госэкспертизе,</li>
+                <li>производим техническое сопровождение проекта.</li>
+              </ul>
+            </div>
+            <div class="about__wrapper--grid2">
+              <p class="about__text about__text--grid2">Большинство вопросов и задач решаем дистанционно, а также выезжаем на объект. <br><br>Наши инженеры имеют профильное образование и богатый опыт ( от 15 лет) проектирования и запуска в производство. Мы всегда находим оптимальное решения поставленных задач, обеспечиваем соответствие качества продукции и услуг ожиданиям заказчика, договорным обязательствам, нормативно-технической документации и международным стандартам!<br><br>FastProject входит в группу компаний Fastgroup, которая начала свою историю с 1995 года и зарекомендовала себя не только на территории РФ, но и за ее пределами. <br><br>Имеем свое представительство в крупных городах России : Москва, Санкт-Петербург, а так же и за границей: Объединённые Арабские Эмираты (Дубай), Казахстан (Астана, Атырау, Кызыл-Орда, Актау, Уральск, Актобе). <br><br>Собственные производственные базы в: Москве, Твери, Новосибирске, Алмате, Атыра.</p>
+            </div>
+          </div>  
         </div>
       </section>
       <section class="main__partners partners">
@@ -382,22 +431,22 @@
           <form action="#" class="form__date" method="post">
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Данные пользователя</legend>
-              <label class="form__label">
+              <label class="form__label form__label--name">
                 <input name="name" type="text" class="form__input" placeholder="Ваше имя*" required>
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--email">
                 <input name="email" type="email" class="form__input" placeholder="Электронная почта*" required>
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--phone">
                 <input name="tel" type="tel" class="form__input" placeholder="Телефон*" required>
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--company">
                 <input name="company" type="text" class="form__input" placeholder="Компания">
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--inn">
                 <input name="inn" type="text" class="form__input" placeholder="ИНН">
               </label>
-              <label class="form__label">
+              <label class="form__label form__label--message">
                 <textarea name="message" id="form__message" class="form__textarea" placeholder="Ваше сообщение*"></textarea>
               </label>
               <div class="form__file-content">
@@ -443,29 +492,35 @@
             <span>конструкторское<br>бюро общего<br>машиностроения</span>
           </a>
         </div>
-        <ul class="footer__menu-list">
-          <li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
-          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Портфолио</a></li>
-          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
-          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Заказчикам</a></li>
-          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Новости</a></li>
-          <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
-        </ul>
-        <h3 class="footer__title">Услуги</h3>
-        <ul class="footer__services-list">
-          <li class="footer__services-item"><a href="" class="footer__services-link">Конструкторские услуги</a></li>
-          <li class="footer__services-item"><a href="" class="footer__services-link">3D-моделирование и промышленный дизайн</a></li>
-          <li class="footer__services-item"><a href="" class="footer__services-link">Технологические услуги</a></li>
-          <li class="footer__services-item"><a href="" class="footer__services-link">Измерительные услуги</a></li>
-          <li class="footer__services-item"><a href="" class="footer__services-link">Техническая документация</a></li>
-          <li class="footer__services-item"><a href="" class="footer__services-link">Разработка документации для регистрации и сертификации продукции</a></li>
-        </ul>
-        <a href="tel:88001234567" class="footer__link">8 (800) 123 45 67</a>
-        <button class="footer__callback-phone btn-link">Заказать обратный звонок</button>
-        <a href="#" class="footer__social">мы в соцсетях</a>
-        <a href="mailto:info@fastproject.ru" class="footer__link-email">info@fastproject.ru</a>
-        <a href="#" class="footer__policy">Политика конфиденциальности</a>
-        <p class="footer__text">© 2007-2023 Fast Project. Все права защищены</p>
+        <div class="footer__wrapper-menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Портфолио</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Заказчикам</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Новости</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+          </ul>
+          <h3 class="footer__title">Услуги</h3>
+          <ul class="footer__services-list">
+            <li class="footer__services-item"><a href="" class="footer__services-link">Конструкторские услуги</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">3D-моделирование и промышленный дизайн</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Технологические услуги</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Измерительные услуги</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Техническая документация</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Разработка документации для регистрации и сертификации продукции</a></li>
+          </ul>
+        </div>
+        <div class="footer__wrapper-info">
+          <a href="tel:88001234567" class="footer__link">8 (800) 123 45 67</a>
+          <button class="footer__callback-phone btn-link">Заказать обратный звонок</button>
+          <a href="#" class="footer__social">мы в соцсетях</a>
+          <a href="mailto:info@fastproject.ru" class="footer__link-email">info@fastproject.ru</a>
+        </div>
+        <div class="footer__wrapper-policy">
+          <a href="#" class="footer__policy">Политика конфиденциальности</a>
+          <p class="footer__text">© 2007-2023 Fast Project. Все ыправа защищены</p>
+        </div>
       </div>
     </footer>
 
