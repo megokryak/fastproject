@@ -20,6 +20,10 @@
     column-gap: 33px;
     row-gap: 59px;
   }
+
+  @media (min-width: @d-width) {
+    grid-template-columns: repeat(3, 2fr);
+  }
 }
 
 .services__item:not(:first-child) {
@@ -50,6 +54,10 @@
     padding-left: 156px;
     padding-right: 90px;
     margin-top: 32px;
+  }
+
+  @media (min-width: @d-width) {
+    padding-right: 121px;
   }
 
   &::after {
@@ -127,6 +135,12 @@
     @media (min-width: @t-width) {
       background-image: url("../img/Uslugi_icon_4t.svg");
     }
+}
+
+.services__item--fifth span.services__text {
+  @media (min-width: @d-width) {
+    padding-right: 45px;
+  }
 }
 
 .services__item--fifth span.services__text::before {

@@ -20,6 +20,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @d-width) {
+    padding: 0 339px;
+  }
 }
 
 .portfolio__item-group {
@@ -80,6 +84,10 @@
     grid-template-columns: repeat(3, 3fr);
     column-gap: 30px;
     row-gap: 30px;
+  }
+
+  @media (min-width: @d-width) {
+    grid-template-columns: repeat(4, 2fr);
   }
 }
 
