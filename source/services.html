@@ -6,9 +6,9 @@
     <title>FastProject - Конструкторское бюро общего машиностроения</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page ">
+  <body class="page">
     <!--Header start-->
-    <header class="page__header header header--nojs header--closed-menu">
+    <header class="page__header header header--color header--nojs header--closed-menu">
       <div class="main-nav__wrapper-tablet container">
         <a href="tel:88001234567" class="main-nav__link">8 (800) 123 45 67</a>
         <button class="main-nav__callback-phone btn-link">Заказать обратный звонок</button>
@@ -79,62 +79,17 @@
         </div>
       </nav>
     </header>
-    <main class="page__main main">
-      <h1 class="visually-hidden">FastProject - Конструкторское бюро общего машиностроения</h1>
-      <section class="main__promo promo">
-        <div class="promo__conteiner container">
-          <h2 class="promo__title">Разработка <br>и оптимизация технологических процессов</h2>
-          <ul class="promo__list-description">
-            <li class="promo__item-description">Разработка и оптимизация существующих технологических процессов</li>
-            <li class="promo__item-description">Разработка технологической оснастки</li>
-            <li class="promo__item-description">Подбор оборудования и инструмента</li>
-          </ul>
-          <a href="#" class="promo__link btn">Заказать проект</a>
-        </div>
-        <picture>
-          <source media="(min-width: 1920px)" srcset="img/img_1_screen1920.png">
-          <source media="(min-width: 1200px)" srcset="img/img_1_screen.png">
-          <img src="img/exploded-part.png" alt="Разнесенный вид" class="promo__img" width="360" height="339">
-        </picture>
-        <div class="promo__conteiner container">
-          <ul class="promo__pagination-list">
-            <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--prev"><span class="visually-hidden">Предыдущий слайд</span></button></li>
-            <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--active"><span class="visually-hidden">1 слайд</span></button></li>
-            <li class="promo__pagination-item"><button class="promo__pagination-button"><span class="visually-hidden">2 слайд</span></button></li>
-            <li class="promo__pagination-item"><button class="promo__pagination-button"><span class="visually-hidden">3 слайд</span></button></li>
-            <li class="promo__pagination-item"><button class="promo__pagination-button promo__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
-          </ul>
-        </div>
-      </section>
-      <section class="main__advantages advantages">
-        <div class="advantages__container container">
-          <h3 class="advantages__title">Преимущества работы с нами</h3>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--first">
-              <b class="advantages__item-title">Гибкий подход</b>
-              <p class="advantages__item-description">Нам Важен результат!</p>
-              <p class="advantages__item-description">Учитываем все пожелания заказчика даже если они появляются<br>в процессе проектирования.</p>
-              <p class="advantages__item-description">Вносим все правки!</p>
-            </li>
-            <li class="advantages__item advantages__item--second">
-              <b class="advantages__item-title">Конфиденциальность</b>
-              <p class="advantages__item-description">Подписываем соглашение о неразглашении.</p>
-              <p class="advantages__item-description">Вы являетесь правообладателем изделия!</p>
-            </li>
-            <li class="advantages__item advantages__item--third">
-              <b class="advantages__item-title">Оперативная связь</b>
-              <p class="advantages__item-description">Менеджер всегда на связи <br>по телефону и whatsapp:</p>
-              <a href="tel:88001234567" class="advantages__link">8 (800) 123 45 67</a>
-              <a href="#" class="advantages__whatsapp">whatsapp</a>
-            </li>
-            <li class="advantages__item advantages__item--fouth">
-              <b class="advantages__item-title">Гарантия</b>
-              <p class="advantages__item-description">Все работы оформляются через договор.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main__services services">
+    <main class="page__main-services main-services">
+      <h1 class="visually-hidden">FastProject - Услуги конструкторского бюро</h1>
+      <ul class="main-services__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link breadcrumbs__link--active">Услуги</a>
+        </li>
+      </ul>
+      <section class="main-services__services services">
         <div class="services__container container">
           <h2 class="services__title">Услуги</h2>
           <ol class="services__list">
@@ -177,7 +132,42 @@
           </ol>
         </div>
       </section>
-      <section class="main__progress progress">
+      <section class="main-services__advantages advantages">
+        <div class="advantages__container container">
+          <h3 class="advantages__title">Преимущества работы с нами</h3>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--first">
+              <b class="advantages__item-title">Гибкий подход</b>
+              <p class="advantages__item-description">Нам Важен результат!</p>
+              <p class="advantages__item-description">Учитываем все пожелания заказчика даже если они появляются<br>в процессе проектирования.</p>
+              <p class="advantages__item-description">Вносим все правки!</p>
+            </li>
+            <li class="advantages__item advantages__item--second">
+              <b class="advantages__item-title">Конфиденциальность</b>
+              <p class="advantages__item-description">Подписываем соглашение о неразглашении.</p>
+              <p class="advantages__item-description">Вы являетесь правообладателем изделия!</p>
+            </li>
+            <li class="advantages__item advantages__item--third">
+              <b class="advantages__item-title">Оперативная связь</b>
+              <p class="advantages__item-description">Менеджер всегда на связи <br>по телефону и whatsapp:</p>
+              <a href="tel:88001234567" class="advantages__link">8 (800) 123 45 67</a>
+              <a href="#" class="advantages__whatsapp">whatsapp</a>
+            </li>
+            <li class="advantages__item advantages__item--fouth">
+              <b class="advantages__item-title">Гарантия</b>
+              <p class="advantages__item-description">Все работы оформляются через договор.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-services__message message">
+        <div class="message__container container">
+          <h2 class="message__title">Напишите нам</h2>
+          <p class="message__text">Если у вас остались вопросы по проекту, заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <button type="button" class="message__button btn">Задать вопрос</button>
+        </div>
+      </section>
+      <section class="main-services__progress progress">
         <div class="progress__container container">
           <h2 class="visually-hidden">Достижения</h2>
           <ul class="progress__list">
@@ -196,7 +186,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__plan plan">
+      <section class="main-services__plan plan">
         <div class="plan__container container">
           <h2 class="plan__title">Порядок выполнения конструкторских работ</h2>
           <ol class="plan__list">
@@ -257,7 +247,7 @@
           </ol>
         </div>
       </section>
-      <section class="main__portfolio portfolio">
+      <section class="main-services__portfolio portfolio">
         <div class="portfolio__container container">
           <h2 class="portfolio__title">Наше портфолио</h2>
           <ul class="portfolio__list-group">
@@ -302,7 +292,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__reviews reviews">
+      <section class="main-services__reviews reviews">
         <div class="reviews__container container">
           <h2 class="reviews__title">Отзывы наших клиентов</h2>
           <ul class="reviews__list">
@@ -346,7 +336,7 @@
           <li class="reviews__pagination-item"><button class="reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
         </ul>
       </section>
-      <section class="main__about about">
+      <section class="main-services__about about">
         <div class="about__container container">
           <h2 class="about__title">О компании</h2>
           <div class="about__wrapper">
@@ -368,7 +358,7 @@
           </div>  
         </div>
       </section>
-      <section class="main__partners partners">
+      <section class="main-services__partners partners">
         <div class="partners__container container">
           <h2 class="partners__title">Нам доверяют</h2>
           <ul class="partners__list">
@@ -382,7 +372,7 @@
           <p class="partners__text">Мы уже работаем с крупными компаниями как Газпром, Роснефть, Транснефть, КазТрансОил, CPPE, CNPC, WPK, KGM и др. и открыты для сотрудничества как с компаниями и промышленными организациями, так и с частными лицами по всей России и за ее пределами.</p>
         </div>
       </section>
-      <section class="main__documents documents">
+      <section class="main-services__documents documents">
         <div class="documents__container container">
           <h2 class="documents__title">Компания FastProject имеет</h2>
           <ul class="documents__list">
@@ -395,39 +385,7 @@
           </ul>
         </div>
       </section>
-      <section class="main__news news">
-        <div class="news__container container">
-          <h2 class="news__title">Новости компании</h2>
-          <ul class="news__list">
-            <li class="news__item">
-              <div class="news__item-img-wrapper">
-                <img src="img/new1.png" alt="Последняя новость" class="news__img" width="130" height="130">
-              </div>
-              <div class="news__wrapper">
-                <p class="news__date">29 сентября 2023</p>
-                <h3 class="news__subtitle">Техзадание для реверс-инжиниринга: план создания</h3>
-                <p class="news__text">Расскажем, что должно быть в техническом задании, если вам нужен реверс-инжиниринг.</p>
-              </div>
-            </li>
-          </ul>
-          <ul class="news__slider-list">
-            <li class="news__slider-item">
-              <button class="news__button news__button--prev">
-                <span class="visually-hidden">Предыдущая новость</span>
-              </button>
-            </li>
-            <li class="news__slider-item">
-              <a href="#" class="news__slider-link btn-link">Смотреть все новости</a>
-            </li>
-            <li class="news__slider-item">
-              <button class="news__button news__button--next">
-                <span class="visually-hidden">Следущая новость</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="main__form form">
+      <section class="main-services__form form">
         <div class="form__container container">
           <h2 class="form__title">Напишите нам</h2>
           <p class="form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
@@ -466,7 +424,7 @@
           </form>
         </div>
       </section>
-      <section class="main__contacts contacts">
+      <section class="main-services__contacts contacts">
         <div class="contacts__container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper-map">
