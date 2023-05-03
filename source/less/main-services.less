@@ -6,17 +6,26 @@
 }
 
 .main-services__breadcrumbs {
-  padding-left: 289px;
+  padding: 0 30px;
+
+  @media (min-width: @t-width) {
+    padding-left: 145px;
+  }
+
+  @media (min-width: @d-width) {
+    padding-left: 289px;
+  }
 }
 
 .main-services__advantages {
-  margin-top: -63px;
+  margin-top: 0;
   padding-top: 70px;
   padding-bottom: 52px;
 
   @media (min-width: @t-width) {
     margin-top: 4px;
     padding-top: 71px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: @d-width) {
@@ -26,6 +35,16 @@
 }
 
 .main-services__message {
+  margin-top: -10px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  @media (min-width: @t-width) {
+    margin-top: -40px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
   @media (min-width: @d-width) {
     width: 100%;
     margin-top: -265px;
