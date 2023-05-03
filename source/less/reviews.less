@@ -111,18 +111,17 @@
 }
 
 .reviews__pagination-list {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 30px;
+  position: absolute;
+  top: calc(50%);
+  left: 0;
+  right: 0;
 
   @media (min-width: @t-width) {
-     display: flex;
-     justify-content: space-between;
-     list-style-type: none;
-     margin: -201px 0 0 0;
      padding: 0 50px;
-  }
-
-  @media (min-width: @d-width) {
-    margin: -206px 0 0 0;
   }
 }
 
@@ -135,16 +134,16 @@
 .reviews__pagination-button--prev,
 .reviews__pagination-button--next {
   background-color: transparent;
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/Arrow_rew.svg");
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/arrow_left.svg");
   background-position: center;
   background-repeat: no-repeat;
-}
 
-.reviews__pagination-button--prev {
   @media (min-width: @t-width) {
-    
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/Arrow_rew.svg");
   }
 }
 

@@ -94,3 +94,49 @@
 .portfolio__item-img img {
   display: block;
 }
+
+.portfolio__pagination-list {
+  display: none;
+
+  @media (min-width: @t-width) {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 30px;
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: @d-width) {
+    top: 200px;
+  }
+}
+
+
+.portfolio__pagination-button {
+  border: none;
+  background-color: @colorGray;
+}
+
+.portfolio__pagination-button--prev,
+.portfolio__pagination-button--next {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/arrow_left.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @t-width) {
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/Arrow_rew.svg");
+  }
+}
+
+.portfolio__pagination-button--next {
+  transform: rotate(180deg);
+  
+}
