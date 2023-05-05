@@ -95,7 +95,11 @@
       <section class="constructor__constructor-services constructor-services">
         <div class="constructor-services__container container">
           <h1 class="constructor-services__title">Конструкторские услуги</h1>
-          <img src="img/constructor.jpg" alt="Конструкторские услуги" class="constructor-services__img" width="603" height="900">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="img/constructor.jpg">
+            <source media="(min-width: 1200px)" srcset="img/photo_1.jpg">
+            <img src="img/photo_1.jpg" alt="Конструкторские услуги" class="constructor-services__img" width="603" height="900">
+          </picture>
           <div class="constructor-services__wrapper">
             <p class="constructor-services__text">Наша компания выполняет конструкторское проектирование деталей, частей оборудования на заказ под изготовление, сертификацию, презентацию и другие цели наших клиентов. Разработка конструкторской документации в сфере общего машиностроения — это основная специализация нашей компании.</p>
             <p class="constructor-services__text">По каждой услуге мы создали отдельную страницу, где подробно написали для чего она, как оценивается, в каком порядке выполняется, на что нужно обратить внимание. Кликайте на названия интересующих услуг, чтобы получить дополнительные данные о порядке оформления и разработки.</p>
@@ -119,7 +123,7 @@
                 </a>
               </li>
               <li class="constructor-services__item constructor-services__item--active">
-                <a href="" class="constructor-services__link">
+                <a href="article.html" class="constructor-services__link">
                   <b>Оцифровка чертежей</b>
                   <p>Векторизация и оцифровка — это способы перевода графических материалов в электронный вид с применением современного ПО</p>
                 </a>
@@ -308,7 +312,7 @@
       </section>
       <section class="constructor__form form">
         <div class="form__container container">
-          <h2 class="form__title">Напишите нам</h2>
+          <h2 class="form__title">Обсудить проект</h2>
           <p class="form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
           <form action="#" class="form__date" method="post">
             <fieldset class="form__fieldset">
