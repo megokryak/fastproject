@@ -12,11 +12,15 @@
 }
 
 .other-services__list {
-  margin: 54px -51px 0 0;
+  margin: 45px 0 0 0;
   padding: 0;
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+
+  @media (min-width: @d-width) {
+    margin: 54px -51px 0 0;
+  }
 }
 
 .other-services__item {
