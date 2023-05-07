@@ -26,8 +26,9 @@ toggleColor.addEventListener('click', function() {
 
 window.addEventListener('scroll', function (e) {
     e.preventDefault();
-
-    if (window.pageYOffset >= 70) {
+    
+    if (window.pageYOffset >= 20) {
+      console.log("tyt");
       navMain.classList.add('header--fixed');
 
     } else {
