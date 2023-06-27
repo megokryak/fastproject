@@ -68,12 +68,18 @@
 
 .main-nav__menu-link {
   margin-top: 21px;
+
+  @media (min-width: @t-width) {
+    padding-right: 18px;
+    position: relative;
+  }
+}
+
+.main-nav__menu-item--submenu .main-nav__menu-link--submenu {
   color: @colorGray;
 
   @media (min-width: @t-width) {
     color: @colorDark;
-    padding-right: 18px;
-    position: relative;
   }
 }
 
@@ -164,7 +170,7 @@
     left: -3px;
     text-align: left;
     padding-top: 70px;
-    padding-bottom: 45px;
+    padding-bottom: 10px;
     margin-top: -10px;
   }
 }

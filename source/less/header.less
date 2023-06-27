@@ -1,10 +1,15 @@
 .header {
   background-color: @colorLGray;
   padding-bottom: 15px;
-  transition: 1s;
+  transition: 0.4s;
   box-sizing: border-box;
 
   @media (min-width: @t-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -48,6 +53,13 @@
 
 .header--open-menu .header__navigation {
   display: block;
+}
+
+.header--fixed {
+  @media (min-width: @t-width) {
+    position: fixed;
+    transition: 0.5s;
+  }
 }
 
 .header__link {
