@@ -2,9 +2,9 @@ var navMain = document.querySelector('.header');
 var navToggle = document.querySelector('.header__toggle');
 var map = document.querySelector('.contacts__img');
 var toggleColor = document.querySelector('.main-nav__toggle-color');
-var subMenuItem = document.querySelector('.main-nav__menu-list');
+var subMenuItem = document.querySelector('.main-nav__menu-item--submenu');
 var subMenu = document.querySelector('.main-nav__submenu-list');
-var heightHeader = navMain.offsetHeight;
+var paginationHeader = navMain.offsetHeight;
 
 navMain.classList.remove('header--nojs');
 map.classList.remove('contacts__img--nojs');
@@ -40,9 +40,13 @@ toggleColor.addEventListener('click', function() {
 //  });
 
 function mouseHoverSubmenu() {
-  console.log(heightHeader);
-  navMain.style.height = heightHeader + subMenu.offsetHeight;
-  console.log(navMain.offsetHeight);
+  console.log(subMenu.offsetHeight + paginationHeader);
+  navMain.style.height = subMenu.offsetHeight + paginationHeader + "px";
 };
 
-subMenuItem.addEventListener('mouseover', mouseHoverSubmenu);
+function mouseLeaveSubmenu() {
+  navMain.style.height = paginationHeader + "px";
+};
+
+subMenuItem.addEventListener('mouseenter', mouseHoverSubmenu);
+subMenuItem.addEventListener('mouseleave', mouseLeaveSubmenu);

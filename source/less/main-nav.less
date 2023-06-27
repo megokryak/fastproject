@@ -77,7 +77,7 @@
   }
 }
 
-.main-nav__menu-link--submenu:hover::after {
+.main-nav__menu-item--submenu::after {
   @media (min-width: @t-width) {
     content: "";
     position: absolute;
@@ -88,6 +88,14 @@
     background-image: url("../img/icon_ghostbutton-arrow.svg");
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.5s;
+  }
+}
+
+.main-nav__menu-item--submenu:hover::after {
+  @media (min-width: @t-width) {
+    transform: rotate(180deg);
+    transition: transform 0.5s;
   }
 }
 
@@ -172,6 +180,7 @@
 .main-nav__submenu-item:hover a {
   @media (min-width: @t-width) {
     color: @colorBlue;
+    transition: 0.3s;
   }
 }
 
@@ -186,6 +195,7 @@
     background-image: url("../img/icon_button-arrow_hover.svg");
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.4s;
   }
 }
 
