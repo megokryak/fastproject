@@ -5,7 +5,10 @@
   box-sizing: border-box;
 
   @media (min-width: @t-width) {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
    }
 }
 
@@ -38,6 +41,7 @@
 
   @media (min-width: @t-width) {
     display: block;
+    flex-grow: 1;
   }
 }
 
@@ -62,6 +66,15 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @t-width) {
+    padding: 0 0 0 120px;
+    min-width: auto;
+  }
+
+  @media (min-width: @d-width) {
+    padding: 0 0 0 290px;
+  }
 }
 
 .header__svg {
