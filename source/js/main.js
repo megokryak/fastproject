@@ -41,12 +41,13 @@ window.addEventListener('scroll', function (e) {
   });
 
 function mouseHoverSubmenu() {
-  console.log(subMenu.offsetHeight + paginationHeader);
   navMain.style.height = subMenu.offsetHeight + paginationHeader - paddingMenu + "px";
+  navMain.style.boxShadow = "0 4px 11px rgba(168,175,196,.5)";
 };
 
 function mouseLeaveSubmenu() {
   navMain.style.height = paginationHeader + "px";
+  navMain.style.boxShadow = "none";
 };
 
 subMenuItem.addEventListener('mouseenter', mouseHoverSubmenu);
