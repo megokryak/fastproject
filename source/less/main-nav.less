@@ -150,7 +150,18 @@
   padding-bottom: 29px;
 
   @media (min-width: @t-width) {
-    display: none;
+    //display: none;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    text-align: left;
+    padding: 0;
+    margin-top: -10px;
+    opacity: 0;
+    z-index: -200;
   }
 }
 
@@ -162,16 +173,19 @@
 
 .main-nav__menu-item:hover .main-nav__submenu-list {
   @media (min-width: @t-width) {
-    display: flex;
-    width: 400px;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: -3px;
-    text-align: left;
+    //display: flex;
+    //width: 400px;
+    //flex-direction: column;
+    //position: absolute;
+    //top: 0;
+    //left: -3px;
+    //text-align: left;
     padding-top: 70px;
     padding-bottom: 45px;
     margin-top: -10px;
+    opacity: 1;
+    z-index: 10;
+    transition: all 0.3s 0.2s;
   }
 }
 
