@@ -121,8 +121,23 @@ img {
     padding-top: 163px;
   }
 }
+@media (min-width: 1200px) {
+  .page__constructor {
+    padding-top: 183px;
+  }
+}
 .page__main-services {
   padding-top: 5px;
+}
+@media (min-width: 1200px) {
+  .page__main-services {
+    padding-top: 183px;
+  }
+}
+@media (min-width: 1200px) {
+  .page__article {
+    padding-top: 183px;
+  }
 }
 .page__footer {
   padding-bottom: 20px;
@@ -194,6 +209,7 @@ img {
   padding-bottom: 15px;
   transition: 0.4s;
   box-sizing: border-box;
+  z-index: 1;
 }
 @media (min-width: 1200px) {
   .header {
@@ -1677,6 +1693,7 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: nowrap;
 }
 @media (min-width: 1200px) {
   .portfolio__list-group {

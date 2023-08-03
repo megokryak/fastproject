@@ -41,7 +41,8 @@ window.addEventListener('scroll', function (e) {
   });
 
 function mouseHoverSubmenu() {
-  navMain.style.height = subMenu.offsetHeight + paginationHeader - paddingMenu + "px";
+  navMain.style.height = subMenu.offsetHeight + paginationHeader + paddingMenu + "px";
+  console.log(subMenu.offsetHeight);
   navMain.style.boxShadow = "0 4px 11px rgba(168,175,196,.5)";
 };
 
