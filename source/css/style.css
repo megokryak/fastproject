@@ -236,6 +236,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  border-bottom: 1px solid #c9c9c9;
   z-index: 999;
 }
 @media (min-width: 1200px) {
@@ -626,18 +628,18 @@ img {
     justify-content: flex-end;
   }
 }
-.main-nav__menu-item:not(:first-child) {
+.main-nav__submenu-item1:not(:first-child) {
   margin-top: 18px;
 }
 @media (min-width: 1200px) {
-  .main-nav__menu-item:not(:first-child) {
+  .main-nav__submenu-item1:not(:first-child) {
     margin-top: 0;
     margin-left: 36px;
     order: 3;
   }
 }
 @media (min-width: 1920px) {
-  .main-nav__menu-item:not(:first-child) {
+  .main-nav__submenu-item1:not(:first-child) {
     margin-left: 23px;
   }
 }
@@ -674,35 +676,39 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .main-nav__menu-item {
+  .main-nav__submenu-item1 {
     position: relative;
   }
 }
 @media (min-width: 1200px) {
-  .main-nav__menu-item:hover .main-nav__submenu-list {
-    padding-top: 70px;
+  .main-nav__submenu-item1:hover .main-nav__submenu-list {
+    padding-top: 40px;
     padding-bottom: 45px;
-    margin-top: -10px;
+    padding-left: 100px;
+    margin-left: -100px;
+    margin-top: 20px;
     opacity: 1;
     z-index: 10;
     transition: all 0.3s 0.2s;
   }
 }
 @media (min-width: 1200px) {
-  .main-nav__submenu-item a {
+  .main-nav__submenu-item2 a {
     box-sizing: border-box;
     padding-right: 32px;
     position: relative;
+    display: block;
+    height: 0;
   }
 }
 @media (min-width: 1200px) {
-  .main-nav__submenu-item:hover a {
+  .main-nav__submenu-item2:hover a {
     color: #00a0e3;
     transition: 0.3s;
   }
 }
 @media (min-width: 1200px) {
-  .main-nav__submenu-item:hover a::after {
+  .main-nav__submenu-item2:hover a::after {
     content: "";
     position: absolute;
     bottom: 1px;
@@ -715,12 +721,24 @@ img {
     transition: 0.4s;
   }
 }
-.main-nav__submenu-item:not(:first-child) {
+.main-nav__submenu-item2:not(:first-child) {
   margin-top: 12px;
 }
 @media (min-width: 1200px) {
-  .main-nav__submenu-item:not(:first-child) {
+  .main-nav__submenu-item2:not(:first-child) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__submenu-item1:hover .main-nav__submenu-item2:not(:first-child) {
     margin-top: 25px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__submenu-item1:hover .main-nav__submenu-item2 a {
+    height: auto;
   }
 }
 .main-nav__wrapper {
@@ -965,7 +983,7 @@ img {
 }
 @media (min-width: 1200px) {
   .promo__img {
-    margin: -495px 0 0 0;
+    margin: -470px 0 0 0;
   }
 }
 @media (min-width: 1920px) {

@@ -1,21 +1,6 @@
 .main-nav {
   padding: 0;
   list-style-type: none;
-
-  //@media (min-width: @t-width) {
-  // position: relative;
-  //}
-  //@media (min-width: @t-width) {
-  //  position: absolute;
-  //  right: 0;
-  //  top: 63px;
-  //}
-  
-  //@media (min-width: @d-width) {
-  //  left: auto;
-  //  top: 92px;
-  //  right: 0;
-  //}
 }
 
 .main-nav__container {
@@ -28,14 +13,6 @@
     padding-right: 270px;
   }
 }
-  
-//  @media (min-width: @d-width) {
-//    left: auto;
-//    top: -71px;
-//    right: 0;
-//  }
-//}
-
 
 .main-nav__link-logo {
   text-decoration: none;
@@ -116,7 +93,7 @@
   }
 }
 
-.main-nav__menu-item:not(:first-child) {
+.main-nav__submenu-item1:not(:first-child) {
   margin-top: 18px;
 
   @media (min-width: @t-width) {
@@ -150,7 +127,6 @@
   padding-bottom: 29px;
 
   @media (min-width: @t-width) {
-    //display: none;
     display: flex;
     width: 400px;
     flex-direction: column;
@@ -165,46 +141,44 @@
   }
 }
 
-.main-nav__menu-item {
+.main-nav__submenu-item1 {
   @media (min-width: @t-width) {
     position: relative;
   }
 }
 
-.main-nav__menu-item:hover .main-nav__submenu-list {
+.main-nav__submenu-item1:hover .main-nav__submenu-list {
   @media (min-width: @t-width) {
-    //display: flex;
-    //width: 400px;
-    //flex-direction: column;
-    //position: absolute;
-    //top: 0;
-    //left: -3px;
-    //text-align: left;
-    padding-top: 70px;
+    padding-top: 40px;
     padding-bottom: 45px;
-    margin-top: -10px;
+    padding-left: 100px;
+    margin-left: -100px;
+    margin-top: 20px;
     opacity: 1;
     z-index: 10;
     transition: all 0.3s 0.2s;
   }
 }
 
-.main-nav__submenu-item a {
+
+.main-nav__submenu-item2 a {
   @media (min-width: @t-width) {
     box-sizing: border-box;
     padding-right: 32px;
     position: relative;
+    display: block;
+    height: 0;
   }
 }
 
-.main-nav__submenu-item:hover a {
+.main-nav__submenu-item2:hover a {
   @media (min-width: @t-width) {
     color: @colorBlue;
     transition: 0.3s;
   }
 }
 
-.main-nav__submenu-item:hover a::after {
+.main-nav__submenu-item2:hover a::after {
   @media (min-width: @t-width) {
     content: "";
     position: absolute;
@@ -219,11 +193,25 @@
   }
 }
 
-.main-nav__submenu-item:not(:first-child) {
+.main-nav__submenu-item2:not(:first-child) {
   margin-top: 12px;
 
   @media (min-width: @t-width) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.main-nav__submenu-item1:hover .main-nav__submenu-item2:not(:first-child) {
+  @media (min-width: @t-width) {
     margin-top: 25px;
+    margin-left: 0;
+  }
+}
+
+.main-nav__submenu-item1:hover .main-nav__submenu-item2 a {
+  @media (min-width: @t-width) {
+    height: auto;
   }
 }
 

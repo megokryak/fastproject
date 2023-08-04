@@ -6,6 +6,7 @@ var subMenuItem = document.querySelector('.main-nav__menu-item--submenu');
 var subMenu = document.querySelector('.main-nav__submenu-list');
 var paginationHeader = navMain.offsetHeight;
 const paddingMenu = 50;
+const tabletWidth = 1200;
 
 navMain.classList.remove('header--nojs');
 map.classList.remove('contacts__img--nojs');
@@ -28,22 +29,23 @@ toggleColor.addEventListener('click', function() {
   }
 });
 
-window.addEventListener('scroll', function (e) {
-    e.preventDefault();
+//window.addEventListener('scroll', function (e) {
+//    e.preventDefault();
     
-    if (window.pageYOffset >= 1) {
-      console.log("tyt");
-      navMain.classList.add('header--fixed');
+//    if (window.pageYOffset >= 1) {
+//      console.log("tyt");
+//      navMain.classList.add('header--fixed');
 
-    } else {
-      navMain.classList.remove('header--fixed');
-    }
-  });
+//    } else {
+//      navMain.classList.remove('header--fixed');
+//    }
+//  });
 
 function mouseHoverSubmenu() {
-  navMain.style.height = subMenu.offsetHeight + paginationHeader + paddingMenu + "px";
-  console.log(subMenu.offsetHeight);
-  navMain.style.boxShadow = "0 4px 11px rgba(168,175,196,.5)";
+  if(document.documentElement.clientWidth >= tabletWidth) {
+    navMain.style.height = subMenu.offsetHeight + paginationHeader + paddingMenu + "px";
+    navMain.style.boxShadow = "0 4px 11px rgba(168,175,196,.5)";
+  }
 };
 
 function mouseLeaveSubmenu() {
