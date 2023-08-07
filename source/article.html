@@ -366,7 +366,72 @@
         </div>
       </div>
     </footer>
-
+    <div class="modal-call modal-call--close">
+      <div class="modal-call__wrapper">
+        <div class="modal-call__container">
+          <button class="modal-call__button">
+            <span class="visually-hidden">Закрыть модально окно</span>
+          </button>
+          <h2 class="modal-call__title">Заказать обратный звонок</h2>
+          <form action="#" class="modal-call__form" method="get">
+            <label class="modal-call__label-name">
+              <input type="text" class="modal-call__name" placeholder="Ваше имя*" required>
+            </label>
+            <label class="modal-call__label-phone">
+              <input type="tel" class="modal-call__phone" placeholder="Телефон*" required>
+            </label>
+            <label class="modal-call__label-date">
+              <input type="text" class="modal-call__date" placeholder="Удобное время">
+            </label>
+            <button class="modal-call__submit btn" type="submit">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-form modal-form--close">
+      <div class="modal-form__wrapper">
+        <div class="modal-form__container">
+          <button class="modal-form__button">
+            <span class="visually-hidden">Закрыть модально окно</span>
+          </button>
+          <h2 class="modal-form__title">Напишите нам</h2>
+          <p class="modal-form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <form action="#" class="modal-form__date" method="post">
+            <fieldset class="modal-form__fieldset">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <label class="modal-form__label modal-form__label--name">
+                <input name="name" type="text" class="modal-form__input" placeholder="Ваше имя*" required>
+              </label>
+              <label class="modal-form__label modal-form__label--email">
+                <input name="email" type="email" class="modal-form__input" placeholder="Электронная почта*" required>
+              </label>
+              <label class="modal-form__label modal-form__label--phone">
+                <input name="tel" type="tel" class="modal-form__input" placeholder="Телефон*" required>
+              </label>
+              <label class="modal-form__label modal-form__label--company">
+                <input name="company" type="text" class="modal-form__input" placeholder="Компания">
+              </label>
+              <label class="modal-form__label modal-form__label--inn">
+                <input name="inn" type="text" class="modal-form__input" placeholder="ИНН">
+              </label>
+              <label class="modal-form__label modal-form__label--message">
+                <textarea name="message" id="modal-form__message" class="modal-form__textarea" placeholder="Ваше сообщение*"></textarea>
+              </label>
+              <div class="modal-form__file-content">
+                <input name="file" type="file" class="modal-form__file">
+                <span class="modal-form__file-check">Прикрепить файл</span>
+                <span class="modal-form__file-info">(до 6 файлов, до 2 Мб)</span>
+              </div>
+              <label class="modal-form__label-checkbox">
+                <input name="check" type="checkbox" class="visually-hidden">
+                <span>Я согласен на обработку персональных данных</span>
+              </label>
+            </fieldset>
+            <button class="modal-form__submit btn" type="submit">Заказать услугу</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>

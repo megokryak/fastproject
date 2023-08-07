@@ -7,7 +7,7 @@ var subMenu = document.querySelector('.main-nav__submenu-list');
 var paginationHeader = navMain.offsetHeight;
 var modalCall = document.querySelector('.modal-call');
 var modalCallClose = document.querySelector('.modal-call__button');
-var mainNavCallbackPhone = document.querySelector('.main-nav__callback-phone');
+var mainNavCallbackPhone = document.querySelectorAll('.main-nav__callback-phone');
 var footerCallbackPhone = document.querySelector('.footer__callback-phone');
 const paddingMenu = 50;
 const tabletWidth = 1200;
@@ -19,8 +19,10 @@ function removeCallPhone() {
   modalCall.classList.remove('modal-call--close');
 };
 
-mainNavCallbackPhone.addEventListener('click', function() {
-  removeCallPhone();
+mainNavCallbackPhone.forEach((e)=> {
+  e.addEventListener('click', function() {
+    removeCallPhone();
+});
 });
 
 footerCallbackPhone.addEventListener('click', function() {

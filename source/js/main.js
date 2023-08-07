@@ -9,6 +9,9 @@ var modalCall = document.querySelector('.modal-call');
 var modalCallClose = document.querySelector('.modal-call__button');
 var mainNavCallbackPhone = document.querySelectorAll('.main-nav__callback-phone');
 var footerCallbackPhone = document.querySelector('.footer__callback-phone');
+var modalForm = document.querySelector('.modal-form');
+var messageButton = document.querySelector('.message__button');
+var modalFormButton = document.querySelector('.modal-form__button');
 const paddingMenu = 50;
 const tabletWidth = 1200;
 
@@ -31,6 +34,14 @@ footerCallbackPhone.addEventListener('click', function() {
 
 modalCallClose.addEventListener('click', function() {
   modalCall.classList.add('modal-call--close');
+});
+
+messageButton.addEventListener('click', function() {
+  modalForm.classList.remove('modal-form--close');
+});
+
+modalFormButton.addEventListener('click', function() {
+  modalForm.classList.add('modal-form--close');
 });
 
 navToggle.addEventListener('click', function() {
