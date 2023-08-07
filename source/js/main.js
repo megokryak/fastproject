@@ -5,11 +5,31 @@ var toggleColor = document.querySelector('.main-nav__toggle-color');
 var subMenuItem = document.querySelector('.main-nav__menu-item--submenu');
 var subMenu = document.querySelector('.main-nav__submenu-list');
 var paginationHeader = navMain.offsetHeight;
+var modalCall = document.querySelector('.modal-call');
+var modalCallClose = document.querySelector('.modal-call__button');
+var mainNavCallbackPhone = document.querySelector('.main-nav__callback-phone');
+var footerCallbackPhone = document.querySelector('.footer__callback-phone');
 const paddingMenu = 50;
 const tabletWidth = 1200;
 
 navMain.classList.remove('header--nojs');
 map.classList.remove('contacts__img--nojs');
+
+function removeCallPhone() {
+  modalCall.classList.remove('modal-call--close');
+};
+
+mainNavCallbackPhone.addEventListener('click', function() {
+  removeCallPhone();
+});
+
+footerCallbackPhone.addEventListener('click', function() {
+  removeCallPhone();
+});
+
+modalCallClose.addEventListener('click', function() {
+  modalCall.classList.add('modal-call--close');
+});
 
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('header--closed-menu')) {
