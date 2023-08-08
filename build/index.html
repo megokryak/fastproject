@@ -54,12 +54,12 @@
             <li class="main-nav__menu-item main-nav__submenu-item1"><a href="#" class="main-nav__menu-link">Контакты</a></li>
             <li class="main-nav__menu-item main-nav__submenu-item1 main-nav__menu-item--submenu"><a href="services.html" class="main-nav__menu-link main-nav__menu-link--submenu">Услуги</a>
               <ul class="main-nav__submenu-list">
-                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="constructor.html" class="main-nav__submenu-link">Конструкторские услуги</a></li>
-                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__submenu-link">3D-моделирование и промышленный дизайн</a></li>
-                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__submenu-link">Технологические услуги</a></li>
-                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__submenu-link">Измерительные услуги</a></li>
-                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__submenu-link">Техническая документация</a></li>
-                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__submenu-link ">Разработка документации для регистрации и сертификации продукции</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="constructor.html" class="main-nav__menu-link">Конструкторские услуги</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">3D-моделирование и промышленный дизайн</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">Технологические услуги</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">Измерительные услуги</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">Техническая документация</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link ">Разработка документации для регистрации и сертификации продукции</a></li>
               </ul>
             </li>
           </ul>
@@ -551,8 +551,11 @@
       </div>
     </div>
     <div class="modal-form modal-form--close">
-      <div class="modal-form__form">
-        <div class="modal-form__container container">
+      <div class="modal-form__wrapper">
+        <div class="modal-form__container">
+          <button class="modal-form__button">
+            <span class="visually-hidden">Закрыть модально окно</span>
+          </button>
           <h2 class="modal-form__title">Напишите нам</h2>
           <p class="modal-form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
           <form action="#" class="modal-form__date" method="post">
@@ -562,13 +565,13 @@
                 <input name="name" type="text" class="modal-form__input" placeholder="Ваше имя*" required>
               </label>
               <label class="modal-form__label modal-form__label--email">
-                <input name="email" type="email" class="form__input" placeholder="Электронная почта*" required>
+                <input name="email" type="email" class="modal-form__input" placeholder="Электронная почта*" required>
               </label>
               <label class="modal-form__label modal-form__label--phone">
-                <input name="tel" type="tel" class="form__input" placeholder="Телефон*" required>
+                <input name="tel" type="tel" class="modal-form__input" placeholder="Телефон*" required>
               </label>
               <label class="modal-form__label modal-form__label--company">
-                <input name="company" type="text" class="form__input" placeholder="Компания">
+                <input name="company" type="text" class="modal-form__input" placeholder="Компания">
               </label>
               <label class="modal-form__label modal-form__label--inn">
                 <input name="inn" type="text" class="modal-form__input" placeholder="ИНН">
@@ -582,11 +585,11 @@
                 <span class="modal-form__file-info">(до 6 файлов, до 2 Мб)</span>
               </div>
               <label class="modal-form__label-checkbox">
-                <input name="check" type="checkbox" class="visually-hidden">\
+                <input name="check" type="checkbox" class="visually-hidden">
                 <span>Я согласен на обработку персональных данных</span>
               </label>
             </fieldset>
-            <button class="modal-form__submit btn" type="submit">Отправить</button>
+            <button class="modal-form__submit btn" type="submit">Заказать услугу</button>
           </form>
         </div>
       </div>

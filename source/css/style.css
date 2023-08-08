@@ -572,19 +572,18 @@ img {
   padding: 0;
   list-style-type: none;
 }
-.main-nav__menu-link,
-.main-nav__submenu-link {
+.main-nav__menu-link {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 17px;
   color: #282828;
 }
-.main-nav__menu-link {
+.main-nav__submenu-item1 .main-nav__menu-link {
   margin-top: 21px;
 }
 @media (min-width: 1200px) {
-  .main-nav__menu-link {
+  .main-nav__submenu-item1 .main-nav__menu-link {
     padding-right: 18px;
     position: relative;
   }
@@ -744,7 +743,7 @@ img {
 .main-nav__wrapper {
   border-top: 1px solid #c9c9c9;
 }
-.main-nav__submenu-link {
+.main-nav__submenu-item2 .main-nav__menu-link {
   font-size: 12px;
   line-height: 19px;
   text-transform: none;
@@ -752,7 +751,7 @@ img {
   text-decoration: none;
 }
 @media (min-width: 1200px) {
-  .main-nav__submenu-link {
+  .main-nav__submenu-item2 .main-nav__menu-link {
     font-size: 14px;
     line-height: 22px;
     color: #222222;
