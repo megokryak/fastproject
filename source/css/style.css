@@ -353,7 +353,7 @@ img {
 }
 @media (min-width: 1200px) {
   .main__promo {
-    padding-bottom: 40px;
+    padding-bottom: 320px;
   }
 }
 @media (min-width: 1920px) {
@@ -428,7 +428,7 @@ img {
 }
 .main__portfolio {
   padding-top: 60px;
-  padding-bottom: 15px;
+  padding-bottom: 60px;
   position: relative;
 }
 @media (min-width: 1200px) {
@@ -684,6 +684,7 @@ img {
     padding-top: 40px;
     padding-bottom: 45px;
     padding-left: 100px;
+    padding-right: 100px;
     margin-left: -100px;
     margin-top: 20px;
     opacity: 1;
@@ -897,11 +898,19 @@ img {
   background-image: url("../img/dark.svg");
 }
 .promo {
-  padding-top: 21px;
+  padding-top: 91px;
   background-color: #f5f5f5;
+  overflow: hidden;
+}
+.promo__slider-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 .promo__title {
   letter-spacing: 0.04em;
+  position: relative;
+  z-index: 3;
 }
 @media (min-width: 1200px) {
   .promo__title {
@@ -909,7 +918,6 @@ img {
     font-size: 48px;
     line-height: 63px;
     padding-right: 250px;
-    margin-top: 76px;
     letter-spacing: 0;
   }
 }
@@ -929,6 +937,8 @@ img {
   color: #00a0e3;
   padding: 0;
   margin: 14px 0 0 0;
+  position: relative;
+  z-index: 3;
 }
 @media (min-width: 1200px) {
   .promo__list-description {
@@ -979,17 +989,21 @@ img {
 .promo__img {
   display: block;
   margin: -20px 0 0 0;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 1200px) {
   .promo__img {
-    margin: -470px 0 0 0;
+    margin: 0;
+    margin: -360px 0 0 105px;
+    width: 1200px;
+    height: auto;
   }
 }
 @media (min-width: 1920px) {
   .promo__img {
     width: 1545px;
     height: auto;
-    margin: -505px 1px 0 auto;
   }
 }
 .promo__pagination-list {
@@ -999,7 +1013,7 @@ img {
   .promo__pagination-list {
     display: flex;
     list-style-type: none;
-    margin: -165px 0 0 0;
+    margin: -135px 0 0 0;
     padding: 0;
   }
 }
@@ -1010,6 +1024,7 @@ img {
 }
 .promo__pagination-item {
   margin-left: 6px;
+  position: relative;
 }
 .promo__pagination-item:nth-child(2) {
   margin-left: 20px;
@@ -1062,6 +1077,7 @@ img {
 @media (min-width: 1200px) {
   .advantages {
     border-radius: 36px 36px 36px 0px;
+    margin: -282px 120px 0 120px;
   }
 }
 @media (min-width: 1920px) {
@@ -1312,7 +1328,7 @@ img {
 .services__text::after {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 1px;
   right: 0;
   width: 24px;
   height: 24px;
@@ -1333,7 +1349,7 @@ img {
 .services__item span.services__text::before {
   content: "";
   position: absolute;
-  top: -50px;
+  bottom: 0;
   left: 0;
   width: 80px;
   height: 102px;
@@ -1711,6 +1727,7 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .portfolio__list-group {
@@ -2037,6 +2054,9 @@ ul.about__text > li:not(:first-child) {
   margin: 35px 0 0 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
 }
 .partners__text {
   margin: 24px 0 0 0;
@@ -2891,7 +2911,7 @@ ul.about__text > li:not(:first-child) {
   }
 }
 .main-services__services {
-  padding-top: 62px;
+  padding-top: 92px;
   padding-bottom: 55px;
 }
 @media (min-width: 1200px) {
@@ -3142,7 +3162,7 @@ ul.about__text > li:not(:first-child) {
   }
 }
 .constructor__constructor-services {
-  padding-top: 20px;
+  padding-top: 90px;
   padding-bottom: 40px;
 }
 @media (min-width: 1920px) {

@@ -1,17 +1,26 @@
 .promo {
-  padding-top: 21px;
+  padding-top: 91px;
   background-color: @colorLGray;
+  overflow: hidden;
+}
+
+.promo__slider-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .promo__title {
   letter-spacing: 0.04em;
+  position: relative;
+  z-index: 3;
 
   @media (min-width: @t-width) {
     display: inline-block;
     font-size: 48px;
     line-height: 63px;
     padding-right: 250px;
-    margin-top: 76px;
+    
     letter-spacing: 0;
   }
 
@@ -32,6 +41,8 @@
   color: @colorBlue;
   padding: 0;
   margin: 14px 0 0 0;
+  position: relative;
+  z-index: 3;
 
   @media (min-width: @t-width) {
     width: 320px;
@@ -84,15 +95,19 @@
 .promo__img {
   display: block;
   margin: -20px 0 0 0;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: @t-width) {
-    margin: -470px 0 0 0;
+    margin: 0;
+    margin: -360px 0 0 105px;
+    width: 1200px;
+    height: auto;
   }
 
   @media (min-width: @d-width) {
     width: 1545px;
     height: auto;
-    margin: -505px 1px 0 auto;
   }
 }
 
@@ -102,7 +117,7 @@
   @media (min-width: @t-width) {
      display: flex;
      list-style-type: none;
-     margin: -165px 0 0 0;
+     margin: -135px 0 0 0;
      padding: 0;
   }
 
@@ -113,6 +128,7 @@
 
 .promo__pagination-item { 
   margin-left: 6px;
+  position: relative;
 }
 
 .promo__pagination-item:nth-child(2) {

@@ -36,9 +36,9 @@ modalCallClose.addEventListener('click', function() {
   modalCall.classList.add('modal-call--close');
 });
 
-messageButton.addEventListener('click', function() {
-  modalForm.classList.remove('modal-form--close');
-});
+//messageButton.addEventListener('click', function() {
+//  modalForm.classList.remove('modal-form--close');
+//});
 
 modalFormButton.addEventListener('click', function() {
   modalForm.classList.add('modal-form--close');
@@ -76,6 +76,7 @@ toggleColor.addEventListener('click', function() {
 
 function mouseHoverSubmenu() {
   if(document.documentElement.clientWidth >= tabletWidth) {
+    console.log(1);
     navMain.style.height = subMenu.offsetHeight + paginationHeader + paddingMenu + "px";
     navMain.style.boxShadow = "0 4px 11px rgba(168,175,196,.5)";
   }
