@@ -65,6 +65,7 @@
   letter-spacing: 0.04em;
   padding: 14px 34px 14px 22px;
   position: relative;
+  z-index: 3;
 
   @media (min-width: @t-width) {
     margin-top: 49px;
@@ -100,7 +101,7 @@
 
   @media (min-width: @t-width) {
     margin: 0;
-    margin: -360px 0 0 105px;
+    margin: -360px 0 0 calc(50% - 430px);
     width: 1200px;
     height: auto;
   }
