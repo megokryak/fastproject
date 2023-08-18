@@ -1,11 +1,5 @@
-.services__container {
-  @media (min-width: @t-width) {
-    padding: 0 30px;
-  }
-}
-
 .services__title {
-  text-align: center;
+  text-align: left;
 }
 
 .services__list {
@@ -39,10 +33,10 @@
 }
 
 .services__text {
-  display: block;
-  padding-left: 95px;
-  padding-right: 18px;
-  margin-top: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 0;
   font-size: 20px;
   line-height: 27px;
   color: @colorDark;
@@ -51,57 +45,28 @@
   @media (min-width: @t-width) {
     font-size: 24px;
     line-height: 32px;
-    padding-left: 156px;
-    padding-right: 90px;
-    margin-top: 32px;
-  }
-
-  @media (min-width: @d-width) {
-    padding-right: 121px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 1px;
-    right: 0;
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-width: @t-width) {
-      width: 34px;
-      height: 34px;
-      background-image: url("../img/Arrow_t.svg");
-    }
+    font-weight: 500;
   }
 }
 
-.services__text br {
-  display: none;
-}
 
-.services__item span.services__text::before {
+.services__item h3.services__text::before {
   content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 102px;
+    display: block;
+    min-width: 80px;
+    min-height: 102px;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: @t-width) {
-      width: 106px;
-      height: 135px;
-      top: -72px;
-      left: 30px;
+      min-width: 84px;
+      min-height: 107px;
+      background-size: 84px 107px;
+      margin-right: 20px;
     }
 }
 
-.services__item--first span.services__text::before {
+.services__item--first h3.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_1.svg");
 
@@ -110,7 +75,7 @@
     }
 }
 
-.services__item--second span.services__text::before {
+.services__item--second h3.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_2.svg");
 
@@ -119,7 +84,7 @@
     }
 }
 
-.services__item--third span.services__text::before {
+.services__item--third h3.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_3.svg");
 
@@ -128,7 +93,7 @@
     }
 }
 
-.services__item--fouth span.services__text::before {
+.services__item--fouth h3.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_4.svg");
 
@@ -137,13 +102,13 @@
     }
 }
 
-.services__item--fifth span.services__text {
+.services__item--fifth h3.services__text {
   @media (min-width: @d-width) {
     padding-right: 45px;
   }
 }
 
-.services__item--fifth span.services__text::before {
+.services__item--fifth h3.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_5.svg");
 
@@ -152,11 +117,45 @@
     }
 }
 
-.services__item--sixth span.services__text::before {
+.services__item--sixth h3.services__text::before {
   content: "";
     background-image: url("../img/Uslugi_icon_6.svg");
 
     @media (min-width: @t-width) {
       background-image: url("../img/Uslugi_icon_6t.svg");
     }
+}
+
+.services__list-category {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @t-width) {
+    margin-top: 36px;
+  }
+}
+
+.services__item-category {
+  display: block;
+}
+
+.services__item-category:not(:first-child) {
+  margin-top: 10px;
+  @media (min-width: @t-width) {
+    margin-top: 14px;
+  }
+}
+
+.services__item-category a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: @colorDGray;
+
+  &:hover {
+    color: @colorBlue;
+  }
 }
