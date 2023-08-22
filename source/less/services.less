@@ -33,6 +33,10 @@
   text-decoration: none;
 }
 
+.services__item {
+  counter-increment: numper-list;
+}
+
 .services__text {
   display: flex;
   align-items: flex-end;
@@ -50,12 +54,17 @@
   }
 }
 
-.services__item {
-  counter-increment: numper-list;
+span.services__text {
+  margin-top: -35px;
+  margin-left: 10px;
+
+  @media (min-width: @t-width) {
+    margin-top: -40px;
+  }
 }
 
-
-.services__item h3.services__text::before {
+.services__item h3.services__text::before,
+.services__item span.services__text::before {
   content: counter(numper-list);
     display: block;
     font-size: 118px;

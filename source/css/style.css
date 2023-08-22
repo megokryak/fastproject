@@ -386,7 +386,7 @@ img {
 @media (min-width: 1200px) {
   .main__services {
     padding-top: 90px;
-    padding-bottom: 23px;
+    padding-bottom: 60px;
   }
 }
 @media (min-width: 1920px) {
@@ -1298,6 +1298,9 @@ img {
 .services__link {
   text-decoration: none;
 }
+.services__item {
+  counter-increment: numper-list;
+}
 .services__text {
   display: flex;
   align-items: flex-end;
@@ -1315,10 +1318,17 @@ img {
     font-weight: 500;
   }
 }
-.services__item {
-  counter-increment: numper-list;
+span.services__text {
+  margin-top: -35px;
+  margin-left: 10px;
 }
-.services__item h3.services__text::before {
+@media (min-width: 1200px) {
+  span.services__text {
+    margin-top: -40px;
+  }
+}
+.services__item h3.services__text::before,
+.services__item span.services__text::before {
   content: counter(numper-list);
   display: block;
   font-size: 118px;
@@ -1328,7 +1338,8 @@ img {
   margin-right: 10px;
 }
 @media (min-width: 1200px) {
-  .services__item h3.services__text::before {
+  .services__item h3.services__text::before,
+  .services__item span.services__text::before {
     font-size: 138px;
     line-height: 107px;
     margin-right: 20px;
