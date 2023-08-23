@@ -2,6 +2,21 @@
   padding-top: 91px;
   background-color: @colorLGray;
   overflow: hidden;
+  position: relative;
+}
+
+.promo__conteiner,
+.promo__container-pagination {
+  position: relative;
+}
+
+.promo__container-pagination {
+  z-index: 4;
+  margin-top: 30px;
+
+  @media (min-width: @t-width) {
+    margin-top: 0;
+  }
 }
 
 .promo__slider-list {
@@ -95,11 +110,15 @@
 
 .promo__img {
   display: block;
-  margin: -20px 0 0 0;
-  position: relative;
+  margin: 0;
+  position: absolute;
+  left: 50px;
+  bottom: -160px;
   z-index: 2;
 
   @media (min-width: @t-width) {
+    position: relative;
+    bottom: auto;
     margin: 0;
     margin: -360px 0 0 calc(50% - 430px);
     width: 1200px;
@@ -112,14 +131,25 @@
   }
 }
 
+//.promo__container-pagination {
+//  position: absolute;
+//  left: 0;
+//  bottom: 165px;
+//  z-index: 4;
+
+//  @media (min-width: @t-width) {
+//    position: static;
+//  }
+//}
+
 .promo__pagination-list {
-  display: none;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @t-width) {
-     display: flex;
-     list-style-type: none;
      margin: -135px 0 0 0;
-     padding: 0;
   }
 
   @media (min-width: @d-width) {
@@ -133,7 +163,11 @@
 }
 
 .promo__pagination-item:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 10px;
+
+  @media (min-width: @t-width) {
+    margin-left: 20px;
+  }
 
   @media (min-width: @d-width) {
     margin-left: 30px;
@@ -155,10 +189,16 @@
 .promo__pagination-button {
   border: none;
   background-color: @colorGray;
-  width: 30px;
-  height: 3px;
-  border: 1.5px;
+  width: 20px;
+  height: 2px;
+  border: 1px;
   cursor: pointer;
+
+  @media (min-width: @t-width) {
+    width: 30px;
+    height: 3px;
+    border: 1.5px;
+  }
 }
 
 .promo__pagination-button--active {
@@ -168,11 +208,16 @@
 .promo__pagination-button--prev,
 .promo__pagination-button--next {
   background-color: transparent;
-  width: 34px;
-  height: 34px;
+  width: 20px;
+  height: 20px;
   background-image: url("../img/Arrow_nav.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: @t-width) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .promo__pagination-button--next {
