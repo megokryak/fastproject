@@ -19,7 +19,7 @@
   display: flex;
   font-size: 12px;
   line-height: 16px;
-  color: @colorDark;
+  color: var(--colorDark);
 }
 
 .main-nav__link-logo span {
@@ -39,7 +39,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 17px;
-  color: @colorDark;
+  color: var(--colorDark);
 }
 
 .main-nav__submenu-item1 .main-nav__menu-link {
@@ -52,10 +52,10 @@
 }
 
 .main-nav__menu-item--submenu .main-nav__menu-link--submenu {
-  color: @colorGray;
+  color: var(--colorGray);
 
   @media (min-width: @t-width) {
-    color: @colorDark;
+    color: var(--colorDark);
   }
 }
 
@@ -173,7 +173,7 @@
 
 .main-nav__submenu-item2:hover a {
   @media (min-width: @t-width) {
-    color: @colorBlue;
+    color: var(--colorBlue);
     transition: 0.3s;
   }
 }
@@ -216,20 +216,20 @@
 }
 
 .main-nav__wrapper {
-  border-top: 1px solid @colorMGray;
+  border-top: 1px solid var(--colorMGray);
 }
 
 .main-nav__submenu-item2 .main-nav__menu-link {
   font-size: 12px;
   line-height: 19px;
   text-transform: none;
-  color: @colorDark;
+  color: var(--colorDark);
   text-decoration: none;
 
   @media (min-width: @t-width) {
     font-size: 14px;
     line-height: 22px;
-    color: @colorBlack;
+    color: var(--colorBlack);
   }
 }
 
@@ -240,7 +240,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  color: @colorDark;
+  color: var(--colorDark);
   text-align: center;
 
   @media (min-width: @t-width) {
@@ -280,7 +280,7 @@
   @media (min-width: @t-width) {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid @colorMGray;
+    border-bottom: 1px solid var(--colorMGray);
     padding-bottom: 10px;
   }
 }
@@ -296,7 +296,7 @@
   display: block;
   font-size: 13px;
   line-height: 21px;
-  color: @colorDark;
+  color: var(--colorDark);
   text-decoration: none;
 
   @media (min-width: @t-width) {
@@ -348,7 +348,7 @@
   height: 24px;
   display: flex;
   align-items: center;
-  background-color: @colorMGray;
+  background-color: var(--colorMGray);
   border-radius: 23px;
   box-sizing: border-box;
 
@@ -363,7 +363,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: @colorWhite;
+  background-color: var(--colorWhite);
   border: none;
   margin-left: auto;
   background-image: url("../img/light.svg");

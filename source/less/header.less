@@ -1,5 +1,5 @@
 .header {
-  background-color: @colorLGray;
+  background-color: var(--colorLGray);
   padding-bottom: 15px;
   transition: 0.4s;
   box-sizing: border-box;
@@ -20,8 +20,8 @@
 }
 
 .header--color {
-  background-color: @colorWhite;
-  border-bottom: 1px solid @colorGray;
+  background-color: var(--colorWhite);
+  border-bottom: 1px solid var(--colorGray);
 }
 
 .header--color .header__container {
@@ -106,7 +106,7 @@
   margin-left: 15px;
   font-size: 9.5px;
   line-height: 12.35px;
-  color: @colorDark;
+  color: var(--colorDark);
 
   @media (min-width: @t-width) {
     display: none;

@@ -1,5 +1,5 @@
 .form {
-  background-color: @colorBlack;
+  background-color: var(--colorBlack);
 }
 
 .form__container {
@@ -13,7 +13,7 @@
 }
 
 .form__title {
-  color: @colorWhite;
+  color: var(--colorWhite);
   text-align: center;
   
   @media (min-width: @d-width) {
@@ -22,7 +22,7 @@
 }
 
 .form__text {
-  color: @colorWhite;
+  color: var(--colorWhite);
   text-align: center;
   margin: 4px 0 0 0;
   padding: 0 5px;
@@ -88,10 +88,10 @@
 
 .form__input {
   display: block;
-  color: @colorGray;
+  color: var(--colorGray);
   width: 100%;
   background-color: transparent;
-  border: 1px solid @colorDGray;
+  border: 1px solid var(--colorDGray);
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
@@ -102,7 +102,7 @@
 }
 
 .form__input::placeholder {
-  color: @colorGray;
+  color: var(--colorGray);
 }
 
 .form__textarea {
@@ -111,11 +111,11 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
-  color: @colorGray;
+  color: var(--colorGray);
   height: 110px;
   width: 100%;
   background-color: transparent;
-  border: 1px solid @colorDGray;
+  border: 1px solid var(--colorDGray);
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
@@ -126,7 +126,7 @@
 }
 
 .form__textarea::placeholder {
-  color: @colorGray;
+  color: var(--colorGray);
 }
 
 .form__file-content {
@@ -151,7 +151,7 @@
 }
 
 .form__file-check {
-  color: @colorBlue;
+  color: var(--colorBlue);
   padding: 0 0 0 26px;
   position: relative;
 
@@ -174,7 +174,7 @@
 }
 
 .form__file-info {
-  color: @colorGray;
+  color: var(--colorGray);
 }
 
 .form__label-checkbox {
@@ -195,7 +195,7 @@
   font-size: 12px;
   line-height: 17px;
   font-weight: 400;
-  color: @colorWhite;
+  color: var(--colorWhite);
   padding: 0 0 0 28px;
   position: relative;
 
@@ -214,7 +214,7 @@
   height: 18px;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid @colorWhite;
+  border: 1px solid var(--colorWhite);
 
   @media (min-width: @t-width) {
     top: -1px;
@@ -232,7 +232,7 @@
   height: 14px;
   box-sizing: border-box;
   border-radius: 2px;
-  background-color: @colorBlue;
+  background-color: var(--colorBlue);
 
   @media (min-width: @t-width) {
     top: 2px;

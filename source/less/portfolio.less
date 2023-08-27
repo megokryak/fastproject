@@ -47,10 +47,10 @@
   text-decoration: none;
   font-size: 10px;
   line-height: 12px;
-  color: @colorDark;
+  color: var(--colorDark);
   background-color: transparent;
   padding: 8px 12px;
-  border: 1px solid @colorBlue;
+  border: 1px solid var(--colorBlue);
   border-radius: 8px;
   transition: 0.3s;
 
@@ -62,19 +62,19 @@
   }
 
   &:focus {
-    background-color: @colorBlue;
-    color: @colorWhite;
+    background-color: var(--colorBlue);
+    color: var(--colorWhite);
   }
 
   &:hover {
-    color: @colorBlue;
+    color: var(--colorBlue);
     transition: 0.3s;
   }
 }
 
 .portfolio__item-link--active {
-  background-color: @colorBlue;
-  color: @colorWhite;
+  background-color: var(--colorBlue);
+  color: var(--colorWhite);
 }
 
 .portfolio__list-img {
@@ -121,7 +121,7 @@
 
 .portfolio__pagination-button {
   border: none;
-  background-color: @colorGray;
+  background-color: var(--colorGray);
 }
 
 .portfolio__pagination-button--prev,

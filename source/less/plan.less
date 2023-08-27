@@ -1,5 +1,5 @@
 .plan {
-  background-color: @colorLGray;
+  background-color: var(--colorLGray);
 }
 
 .plan__title {
@@ -47,11 +47,11 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: @colorBlue;
+    background-color: var(--colorBlue);
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: @colorWhite;
+    color: var(--colorWhite);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +141,7 @@
   left: 15px;
   width: 2px;
   height: 100%;
-  background-color: @colorMGray;
+  background-color: var(--colorMGray);
   z-index: 0;
 
   @media (min-width: @t-width) {
@@ -163,7 +163,7 @@
   left: 15px;
   width: 2px;
   height: 25px;
-  background-color: @colorMGray;
+  background-color: var(--colorMGray);
   z-index: 0;
 
   @media (min-width: @t-width) {
@@ -179,7 +179,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  color: @colorDark;
+  color: var(--colorDark);
 
   @media (min-width: @t-width) {
     font-size: 21px;
@@ -203,7 +203,7 @@
 
 .plan__sublist-item {
   position: relative;
-  color: @colorDark;
+  color: var(--colorDark);
 
   @media (min-width: @t-width) {
     font-size: 14px;
@@ -219,7 +219,7 @@
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: @colorDark;
+    background-color: var(--colorDark);
     position: absolute;
     top: 10px;
     left: 11px;
@@ -239,5 +239,5 @@
 }
 
 .plan__sublist-item a {
-  color: @colorBlue;
+  color: var(--colorBlue);
 }
