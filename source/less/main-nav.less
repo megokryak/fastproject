@@ -280,7 +280,7 @@
   @media (min-width: @t-width) {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid var(--colorMGray);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
   }
 }
@@ -328,6 +328,10 @@
   background-repeat: no-repeat;
 }
 
+.theme_dark .main-nav__social::before {
+  background-image: url("../img/icon_vk_dark.svg");
+}
+
 .main-nav__link-email {
   margin-top: 30px;
   font-size: 12px;
@@ -348,7 +352,7 @@
   height: 24px;
   display: flex;
   align-items: center;
-  background-color: var(--colorMGray);
+  background-color: var(--backgroundToogle);
   border-radius: 23px;
   box-sizing: border-box;
 

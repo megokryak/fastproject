@@ -1,3 +1,4 @@
+var bodyElement = document.body;
 var navMain = document.querySelector('.header');
 var navToggle = document.querySelector('.header__toggle');
 var map = document.querySelector('.contacts__img');
@@ -57,8 +58,12 @@ navToggle.addEventListener('click', function() {
 toggleColor.addEventListener('click', function() {
   if (toggleColor.classList.contains('main-nav__toggle-color--dark')) {
     toggleColor.classList.remove('main-nav__toggle-color--dark');
+    bodyElement.classList.remove('theme_dark');
+    bodyElement.classList.add('theme_white');
   } else {
     toggleColor.classList.add('main-nav__toggle-color--dark');
+    bodyElement.classList.remove('theme_white');
+    bodyElement.classList.add('theme_dark');
   }
 });
 
