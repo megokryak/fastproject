@@ -14,6 +14,7 @@
   --btnText: #ffffff;
   --advantagesText: #ffffff;
   --border: #a9a9a9;
+  --borderInput: #282828;
 }
 .theme_dark {
   --colorWhite: #222222;
@@ -31,6 +32,7 @@
   --btnText: #ffffff;
   --advantagesText: #ffffff;
   --border: #505050;
+  --borderInput: #a9a9a9;
   color: #fff !important;
 }
 html {
@@ -2379,7 +2381,7 @@ ul.about__text > li:not(:first-child) {
   color: var(--colorGray);
   width: 100%;
   background-color: transparent;
-  border: 1px solid var(--colorDGray);
+  border: 1px solid var(--borderInput);
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
@@ -2402,7 +2404,7 @@ ul.about__text > li:not(:first-child) {
   height: 110px;
   width: 100%;
   background-color: transparent;
-  border: 1px solid var(--colorDGray);
+  border: 1px solid var(--borderInput);
   border-radius: 10px;
   padding: 15px;
   box-sizing: border-box;
@@ -2829,6 +2831,9 @@ ul.about__text > li:not(:first-child) {
     top: 0;
   }
 }
+.theme_dark .footer__social::before {
+  background-image: url("../img/icon_vk_dark.svg");
+}
 .footer__link-email {
   margin-top: 10px;
 }
@@ -2848,6 +2853,12 @@ ul.about__text > li:not(:first-child) {
     width: 160px;
     height: 48px;
   }
+}
+.footer__svg--color1 {
+  fill: #333333;
+}
+.theme_dark .footer__svg--color1 {
+  fill: #ffffff;
 }
 .footer__wrapper-policy {
   margin-top: 29px;
