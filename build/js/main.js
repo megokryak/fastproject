@@ -67,18 +67,6 @@ toggleColor.addEventListener('click', function() {
   }
 });
 
-//window.addEventListener('scroll', function (e) {
-//    e.preventDefault();
-    
-//    if (window.pageYOffset >= 1) {
-//      console.log("tyt");
-//      navMain.classList.add('header--fixed');
-
-//    } else {
-//      navMain.classList.remove('header--fixed');
-//    }
-//  });
-
 function mouseHoverSubmenu() {
   if(document.documentElement.clientWidth >= tabletWidth) {
     console.log(1);
