@@ -15,6 +15,7 @@
   --advantagesText: #ffffff;
   --border: #a9a9a9;
   --borderInput: #282828;
+  --colorInputText: #a9a9a9;
 }
 .theme_dark {
   --colorWhite: #222222;
@@ -33,6 +34,7 @@
   --advantagesText: #ffffff;
   --border: #505050;
   --borderInput: #a9a9a9;
+  --colorInputText: #505050;
   color: #fff !important;
 }
 html {
@@ -2383,7 +2385,7 @@ ul.about__text > li:not(:first-child) {
 }
 .form__input {
   display: block;
-  color: var(--colorGray);
+  color: var(--colorInputText);
   width: 100%;
   background-color: transparent;
   border: 1px solid var(--borderInput);
@@ -2397,7 +2399,7 @@ ul.about__text > li:not(:first-child) {
   }
 }
 .form__input::placeholder {
-  color: var(--colorGray);
+  color: var(--colorInputText);
 }
 .form__textarea {
   display: block;
@@ -2405,7 +2407,7 @@ ul.about__text > li:not(:first-child) {
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
-  color: var(--colorGray);
+  color: var(--colorInputText);
   height: 110px;
   width: 100%;
   background-color: transparent;
@@ -2420,7 +2422,7 @@ ul.about__text > li:not(:first-child) {
   }
 }
 .form__textarea::placeholder {
-  color: var(--colorGray);
+  color: var(--colorInputText);
 }
 .form__file-content {
   position: relative;
