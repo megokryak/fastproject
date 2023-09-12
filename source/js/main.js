@@ -37,9 +37,9 @@ modalCallClose.addEventListener('click', function() {
   modalCall.classList.add('modal-call--close');
 });
 
-//messageButton.addEventListener('click', function() {
-//  modalForm.classList.remove('modal-form--close');
-//});
+messageButton.addEventListener('click', function() {
+  modalForm.classList.remove('modal-form--close');
+});
 
 modalFormButton.addEventListener('click', function() {
   modalForm.classList.add('modal-form--close');
