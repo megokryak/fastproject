@@ -171,7 +171,8 @@
 }
 
 .advantages__link,
-.advantages__whatsapp {
+.advantages__whatsapp,
+.advantages__telegramm {
   display: block;
   text-decoration: none;
   color: var(--advantagesText);
@@ -188,7 +189,8 @@
   }
 }
 
-.advantages__whatsapp {
+.advantages__whatsapp, 
+.advantages__telegramm {
   margin-top: 4px;
   padding-left: 26px;
   position: relative;
@@ -198,7 +200,8 @@
   }
 }
 
-.advantages__whatsapp::before {
+.advantages__whatsapp::before,
+.advantages__telegramm::before {
   content: "";
   position: absolute;
   left: 0;
@@ -208,4 +211,8 @@
   background-image: url("../img/form_icon_whatsapp.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.advantages__telegramm::before {
+  background-image: url("../img/icon_telegram.svg");
 }

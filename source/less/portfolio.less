@@ -15,30 +15,21 @@
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
+  gap: 7px;
+
+  @media (min-width: @xt-width) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: @t-width) {
     margin-top: 37px;
     padding: 0 125px;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    gap: 13px;
   }
 
   @media (min-width: @d-width) {
     padding: 0 339px;
-  }
-}
-
-.portfolio__item-group {
-  @media (min-width: @t-width) {
-    margin-top: 13px;
-  }
-}
-
-.portfolio__item-group:not(:first-child) {
-  margin-left: 7px;
-
-  @media (min-width: @t-width) {
-    margin-left: 0;
   }
 }
 
