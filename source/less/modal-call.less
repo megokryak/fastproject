@@ -86,10 +86,11 @@
   line-height: 12px;
   padding: 12px;
   border-radius: 5px;
-  color: var(--colorDGray);
+  color: var(--colorGray);
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--colorGray);
+  background-color: transparent;
 
   @media (min-width: @t-width) {
     font-size: 14px;
@@ -129,8 +130,12 @@
 }
 
 .modal-call__submit {
-  margin-left: auto;
-  margin-top: 30px;
+  margin-top: 20px;
+  
+  @media (min-width: @t-width) {
+    margin-left: auto;
+    margin-top: 30px;
+  }
 }
 
 .modal-call--close {

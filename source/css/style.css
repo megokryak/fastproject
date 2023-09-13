@@ -4257,10 +4257,11 @@ ul.about__text > li:not(:first-child) {
   line-height: 12px;
   padding: 12px;
   border-radius: 5px;
-  color: var(--colorDGray);
+  color: var(--colorGray);
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--colorGray);
+  background-color: transparent;
 }
 @media (min-width: 1200px) {
   .modal-call__name,
@@ -4300,8 +4301,13 @@ ul.about__text > li:not(:first-child) {
   }
 }
 .modal-call__submit {
-  margin-left: auto;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+@media (min-width: 1200px) {
+  .modal-call__submit {
+    margin-left: auto;
+    margin-top: 30px;
+  }
 }
 .modal-call--close {
   display: none;
@@ -4333,7 +4339,12 @@ ul.about__text > li:not(:first-child) {
   }
 }
 .modal-form__container {
-  padding: 60px;
+  padding: 15px;
+}
+@media (min-width: 1200px) {
+  .modal-form__container {
+    padding: 60px;
+  }
 }
 .modal-form__button {
   display: block;
@@ -4576,6 +4587,7 @@ ul.about__text > li:not(:first-child) {
   .modal-form__label-checkbox {
     font-size: 14px;
     line-height: 20px;
+    grid-area: H;
   }
 }
 .modal-form__label-checkbox span {
@@ -4631,17 +4643,19 @@ ul.about__text > li:not(:first-child) {
 }
 .modal-form__submit {
   display: block;
+  width: 100%;
   font-size: 13px;
   line-height: 16px;
   font-weight: 500;
   margin-top: 29px;
-  margin-left: auto;
   letter-spacing: 0.06em;
   padding-right: 31px;
   position: relative;
 }
 @media (min-width: 1200px) {
   .modal-form__submit {
+    width: auto;
+    margin-left: auto;
     font-size: 18px;
     line-height: 22px;
     padding-right: 65px;
