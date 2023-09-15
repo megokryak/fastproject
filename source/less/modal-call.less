@@ -86,7 +86,7 @@
   line-height: 12px;
   padding: 12px;
   border-radius: 5px;
-  color: var(--colorGray);
+  color: var(--colorDark);
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--colorGray);
@@ -98,6 +98,12 @@
     padding: 16px;
     border-radius: 10px;
   }
+}
+
+.modal-call__name::placeholder,
+.modal-call__phone::placeholder,
+.modal-call__date::placeholder {
+  color: var(--colorGray);
 }
 
 .modal-call__label-name {
@@ -131,7 +137,7 @@
 
 .modal-call__submit {
   margin-top: 20px;
-  
+
   @media (min-width: @t-width) {
     margin-left: auto;
     margin-top: 30px;

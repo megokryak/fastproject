@@ -4257,7 +4257,7 @@ ul.about__text > li:not(:first-child) {
   line-height: 12px;
   padding: 12px;
   border-radius: 5px;
-  color: var(--colorGray);
+  color: var(--colorDark);
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--colorGray);
@@ -4272,6 +4272,11 @@ ul.about__text > li:not(:first-child) {
     padding: 16px;
     border-radius: 10px;
   }
+}
+.modal-call__name::placeholder,
+.modal-call__phone::placeholder,
+.modal-call__date::placeholder {
+  color: var(--colorGray);
 }
 .modal-call__label-name {
   margin-top: 15px;
@@ -4496,7 +4501,7 @@ ul.about__text > li:not(:first-child) {
 }
 .modal-form__input {
   display: block;
-  color: var(--colorGray);
+  color: var(--colorDark);
   width: 100%;
   background-color: transparent;
   border: 1px solid var(--colorDGray);
@@ -4518,7 +4523,7 @@ ul.about__text > li:not(:first-child) {
   font-weight: 500;
   font-size: 13px;
   line-height: 21px;
-  color: var(--colorGray);
+  color: var(--colorDark);
   height: 110px;
   width: 100%;
   background-color: transparent;
