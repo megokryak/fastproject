@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FastProject - Конструкторское бюро общего машиностроения</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  </head>
+  <body class="page theme_white">
+    <!--Header start-->
+    <header class="page__header header header--nojs header--closed-menu header--fixed header--color">
+      <div class="main-nav__wrapper-tablet container">
+        <a href="tel:89055600075" class="main-nav__link">8 (905) 560 00 75</a>
+        <button class="main-nav__callback-phone btn-link">Заказать обратный звонок</button>
+        <a href="https://vk.com" class="main-nav__social">мы в соцсетях</a>
+        <div class="main-nav__toggle-color-wrapper">
+          <button class="main-nav__toggle-color" type="button">
+            <span class="visually-hidden">Переключить цвет</span>
+          </button>
+        </div>
+        <a href="mailto:info@fastproj.ru" class="main-nav__link-email">info@fastproj.ru</a>
+      </div>
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="index.html" class="header__link">
+            <svg class="header__svg" width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.22266 16.6891H12.2393L18.3977 10.501H7.22266V16.6891Z" fill="#00A0E3"/>
+              <path d="M7.76277 16.1459H12.015L17.0923 11.0441H7.76277V16.1459ZM12.2388 17.2322H6.68164V9.95776H19.7021L12.4626 17.2322H12.2388Z" fill="#00A0E3"/>
+              <path class="header__svg--color1" d="M7.22125 7.95033H6.68075V6.86398H21.2515L26.8512 1.23729H1.08113V27.1317L7.19866 20.9848L7.96295 21.7527L0 29.7542V0.15094H29.461L21.6991 7.95033H7.22125Z"/>
+              <path d="M40.7684 3.95022V7.59285H48.042V11.2117H40.7684V16.8886H36.1074V0.331238H49.0307V3.95022H40.7684Z" fill="#00A0E3"/>
+              <path d="M61.7557 13.6717H54.7879L53.4934 16.8886H48.7383L56.012 0.331238H60.6024L67.8997 16.8886H63.0504L61.7559 13.6717H61.7557ZM60.3904 10.2183L58.2718 4.91997L56.1532 10.2183H60.3904Z" fill="#00A0E3"/>
+              <path d="M76.3211 17.2198C74.9871 17.2198 73.6925 17.0541 72.4371 16.723C71.1817 16.3918 70.1616 15.9504 69.377 15.3984L70.907 11.9451C71.6446 12.434 72.4999 12.8282 73.4728 13.1277C74.4457 13.4274 75.4031 13.5772 76.3446 13.5772C78.1336 13.5772 79.0282 13.1277 79.0282 12.2289C79.0282 11.7558 78.7732 11.405 78.2632 11.1763C77.7531 10.9476 76.9331 10.7072 75.8033 10.4548C74.5636 10.1868 73.5279 9.89901 72.6961 9.59143C71.8645 9.284 71.1504 8.79119 70.554 8.11316C69.9577 7.435 69.6595 6.52048 69.6595 5.36933C69.6595 4.36008 69.9342 3.44952 70.4835 2.63725C71.0327 1.82526 71.8528 1.18263 72.9433 0.709516C74.0339 0.236399 75.3719 -9.15527e-05 76.9568 -9.15527e-05C78.0397 -9.15527e-05 79.1067 0.122118 80.1583 0.366537C81.2096 0.610955 82.1355 0.969792 82.936 1.44277L81.4999 4.91973C79.9307 4.06836 78.4085 3.6424 76.9333 3.6424C76.0074 3.6424 75.3326 3.78033 74.9088 4.05647C74.4852 4.33246 74.2732 4.69116 74.2732 5.13257C74.2732 5.57411 74.5244 5.90519 75.0265 6.12596C75.5286 6.34673 76.3369 6.57529 77.451 6.81178C78.7064 7.07985 79.7461 7.36774 80.5701 7.67518C81.394 7.98275 82.108 8.47145 82.7122 9.14169C83.3164 9.81179 83.6185 10.7225 83.6185 11.8736C83.6185 12.867 83.3438 13.766 82.7946 14.5702C82.2453 15.3744 81.4214 16.0169 80.3229 16.4979C79.2244 16.9789 77.8905 17.2194 76.3211 17.2194V17.2198Z" fill="#00A0E3"/>
+              <path d="M90.3013 4.04468H85.2402V0.331238H99.9996V4.04468H94.9621V16.8886H90.3013V4.04468Z" fill="#00A0E3"/>
+              <path class="header__svg--color1" d="M39.6416 20.7952C40.8147 20.7952 41.7376 21.0768 42.4104 21.6403C43.0832 22.2036 43.4196 22.9795 43.4196 23.9674C43.4196 24.9556 43.0832 25.7313 42.4104 26.2946C41.7376 26.8579 40.8147 27.1397 39.6416 27.1397H37.4031V29.8959H36.1094V20.7952H39.6417H39.6416ZM39.6028 26.0086C40.4222 26.0086 41.0476 25.8331 41.4788 25.4821C41.9102 25.131 42.1258 24.6262 42.1258 23.9674C42.1258 23.3087 41.9102 22.8038 41.4788 22.4528C41.0476 22.1017 40.4222 21.9264 39.6028 21.9264H37.4031V26.0088H39.6028V26.0086ZM51.377 29.8959L49.4233 27.1007C49.1817 27.1181 48.9919 27.1268 48.8539 27.1268H46.6155V29.8961H45.3217V20.7953H48.8541C50.0272 20.7953 50.9501 21.0769 51.6229 21.6404C52.2957 22.2037 52.6321 22.9796 52.6321 23.9676C52.6321 24.6697 52.4594 25.2676 52.1144 25.7617C51.7694 26.2558 51.2778 26.6154 50.6393 26.8407L52.7873 29.8961H51.377V29.8959ZM48.8152 26.0216C49.6345 26.0216 50.2599 25.8439 50.6912 25.4885C51.1226 25.1331 51.3382 24.626 51.3382 23.9673C51.3382 23.3085 51.1226 22.8037 50.6912 22.4527C50.2599 22.1016 49.6345 21.9262 48.8152 21.9262H46.6155V26.0216H48.8152ZM58.8167 30C57.9024 30 57.0785 29.7985 56.3454 29.3955C55.6121 28.9925 55.0364 28.4356 54.618 27.7249C54.1998 27.0142 53.9906 26.2211 53.9906 25.3456C53.9906 24.4702 54.1998 23.6772 54.618 22.9664C55.0364 22.2557 55.6121 21.6988 56.3454 21.2958C57.0785 20.8928 57.9024 20.6913 58.8167 20.6913C59.7225 20.6913 60.5418 20.8928 61.275 21.2958C62.0081 21.6988 62.5818 22.2535 62.9959 22.9599C63.41 23.6663 63.6169 24.4616 63.6169 25.3456C63.6169 26.2297 63.41 27.025 62.9959 27.7313C62.5818 28.4376 62.0081 28.9924 61.275 29.3955C60.5418 29.7985 59.7223 30 58.8167 30ZM58.8167 28.843C59.4809 28.843 60.0782 28.6912 60.6086 28.3879C61.1392 28.0845 61.5574 27.6662 61.8636 27.1333C62.1699 26.6001 62.3229 26.0042 62.3229 25.3455C62.3229 24.6867 62.1699 24.0909 61.8636 23.5577C61.5574 23.0247 61.1392 22.6064 60.6086 22.3031C60.0782 21.9998 59.4809 21.848 58.8167 21.848C58.1525 21.848 57.5508 21.9998 57.0118 22.3031C56.4726 22.6064 56.05 23.0247 55.7438 23.5577C55.4375 24.0909 55.2845 24.6867 55.2845 25.3455C55.2845 26.0042 55.4375 26.6001 55.7438 27.1333C56.05 27.6662 56.4726 28.0845 57.0118 28.3879C57.551 28.6912 58.1525 28.843 58.8167 28.843ZM78.8068 28.7649V29.8961H72.2341V20.7953H78.6258V21.9265H73.5279V24.7216H78.0694V25.8267H73.5279V28.7649H78.8068ZM84.914 30.0001C84.0083 30.0001 83.1911 29.7986 82.462 29.3956C81.7332 28.9926 81.1617 28.4379 80.7476 27.7314C80.3336 27.0251 80.1266 26.2297 80.1266 25.3458C80.1266 24.4616 80.3336 23.6664 80.7476 22.9601C81.1617 22.2538 81.7354 21.699 82.4686 21.2959C83.2018 20.8929 84.0212 20.6914 84.9268 20.6914C85.6341 20.6914 86.2811 20.8106 86.8677 21.049C87.4542 21.2873 87.9546 21.6405 88.3686 22.1086L87.5275 22.9277C86.846 22.2082 85.9964 21.8486 84.9785 21.8486C84.3058 21.8486 83.6977 22.0003 83.1543 22.3037C82.6109 22.607 82.1861 23.0253 81.8799 23.5583C81.5737 24.0914 81.4206 24.6873 81.4206 25.346C81.4206 26.0048 81.5737 26.6007 81.8799 27.1338C82.1861 27.6668 82.6109 28.0851 83.1543 28.3884C83.6977 28.6918 84.3058 28.8435 84.9785 28.8435C85.9877 28.8435 86.8374 28.4795 87.5275 27.7513L88.3686 28.5704C87.9544 29.0384 87.452 29.3939 86.8612 29.6365C86.2704 29.8791 85.6213 30.0005 84.914 30.0005V30.0001ZM91.9137 21.9264H88.8084V20.7952H96.2998V21.9264H93.1945V29.8961H91.9135V21.9264H91.9137ZM67.0198 30.0001C66.4764 30.0001 65.9717 29.8853 65.5059 29.6556C65.0401 29.4258 64.6649 29.1031 64.3801 28.687L65.1305 27.8028C65.6308 28.5223 66.2606 28.8819 67.0196 28.8819C67.5286 28.8819 67.9145 28.7259 68.1776 28.4139C68.4407 28.1018 68.5723 27.6426 68.5723 27.0358V21.9264H65.2988V20.7952H69.8532V26.9707C69.8532 27.9761 69.6138 28.7324 69.1351 29.2394C68.6563 29.7464 67.9511 30 67.0196 30L67.0198 30.0001Z"/>
+              <path class="header__svg--color1" d="M4.68269 0.829803V2.4203H3.60156V0.829803H4.68269ZM20.0771 0.829803V3.22697H18.9959V0.829803H20.0771ZM13.9193 0.829803V3.22697H12.8381V0.829803H13.9193ZM7.76145 0.829803V3.22697H6.68033V0.829803H7.76145ZM23.1562 0.829803V2.4203H22.0751V0.829803H23.1562ZM16.998 0.829803V2.4203H15.9169V0.829803H16.998ZM10.8402 0.829803V2.4203H9.7591V0.829803H10.8402Z"/>
+              <path class="header__svg--color1" d="M0.675781 22.3332H2.25863V23.4195H0.675781V22.3332ZM0.675781 3.7702H2.25863V4.85655H0.675781V3.7702ZM0.675781 6.8644H3.06141V7.95075H0.675781V6.8644ZM0.675781 13.052H3.06141V14.1383H0.675781V13.052ZM0.675781 19.2395H3.06141V20.3259H0.675781V19.2395ZM0.675781 9.95818H2.25863V11.0445H0.675781V9.95818ZM0.675781 16.1458H2.25863V17.2321H0.675781V16.1458Z"/>
+            </svg>
+            <span>конструкторское<br>бюро общего<br>машиностроения</span>
+          </a>
+        </div>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню/Закрыть меню</span>
+        </button>
+      </div>
+      <!--Main Menu start-->
+      <nav class="header__navigation main-nav">
+        <div class="main-nav__container container">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item main-nav__submenu-item1"><a href="#" class="main-nav__menu-link">О компании</a></li>
+            <li class="main-nav__menu-item main-nav__submenu-item1"><a href="#" class="main-nav__menu-link">Портфолио</a></li>
+            <li class="main-nav__menu-item main-nav__submenu-item1"><a href="#" class="main-nav__menu-link">Цены</a></li>
+            <li class="main-nav__menu-item main-nav__submenu-item1"><a href="#" class="main-nav__menu-link">Заказчикам</a></li>
+            <li class="main-nav__menu-item main-nav__submenu-item1 main-nav__menu-item--news"><a href="#" class="main-nav__menu-link ">Новости</a></li>
+            <li class="main-nav__menu-item main-nav__submenu-item1"><a href="#" class="main-nav__menu-link">Контакты</a></li>
+            <li class="main-nav__menu-item main-nav__submenu-item1 main-nav__menu-item--submenu"><a href="services.html" class="main-nav__menu-link main-nav__menu-link--submenu">Услуги</a>
+              <ul class="main-nav__submenu-list">
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="constructor.html" class="main-nav__menu-link">Конструкторские услуги</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">3D-моделирование и промышленный дизайн</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">Технологические услуги</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">Измерительные услуги</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link">Техническая документация</a></li>
+                <li class="main-nav__menu-item main-nav__submenu-item2"><a href="" class="main-nav__menu-link ">Разработка документации для регистрации и сертификации продукции</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__wrapper container">
+          <a href="tel:89055600075" class="main-nav__link">8 (905) 560 00 75</a>
+          <button class="main-nav__callback-phone btn-link">Заказать обратный звонок</button>
+          <div class="main-nav__wrapper-info">
+            <a href="https://vk.com" class="main-nav__social">мы в соцсетях</a>
+            <div class="main-nav__toggle-color-wrapper">
+              <button class="main-nav__toggle-color" type="button">
+                <span class="visually-hidden">Переключить цвет</span>
+              </button>
+            </div>
+            <a href="mailto:info@fastproj.ru" class="main-nav__link-email">info@fastproj.ru</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="page__prices prices">
+      <h1 class="visually-hidden">Цены на услуги Конструкторского бюро</h1>
+      <ul class="prices__breadcrumbs breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="services.html" class="breadcrumbs__link breadcrumbs__link--active">Цены</a>
+        </li>
+      </ul>
+      <section class="price__description">
+        <div class="price__container container">
+          <h2 class="price__title">Цены</h2>
+        </div>
+          <div class="price__wrapper">
+            <div class="price__container container">
+              <p>Стоимость конструкторских услуг для каждого проекта уникально, так как у каждой задачи различные исхордные данные, объем работ, тип изделия и т.п.</p>
+              <p>Для максимально точного расчета стоимости и срока выполнения Конструкторской документации на Ваше задание необходимо подробное Техническое задание (ТЗ), которое Вы можете отправить на <a href="[[$href_email]]">почту</a> или проконсультироваться с менеджером по <a href="[[$href_phone]]">телефону</a></p>
+              <p>Ниже написаны ориентировочные ценЫ на услуги КБ FastProject:</p>
+            </div>
+          </div>
+          <div class="price__wrapper-service">
+            <div class="price__container container">
+              <h3>Разработка конструкторской документации на новое изделие</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <h3>от 25 000 руб.</h3>
+                  <b>Конструкции без механических частей</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 50 000 руб.</h3>
+                  <b>Устройства с подвижными элементами</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 90 000 руб.</h3>
+                  <b>Механизированные элементы</b>
+                </li>
+              </ul>
+              <p>Указана ориентировочная стоимость работ, для точного расчета направьте ТЗ нам на <a href="[[$href_email]]">почту</a></p>
+              <div id="openFormbutton" class="promo__link btn">Оставить заявку</div>
+            </div>
+          </div>
+          <div class="price__wrapper-service">
+            <div class="price__container container">
+              <h3>Реверс-инжиниринг</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <h3>от 5 000 руб.</h3>
+                  <b>Реверс-инжиниринг детали</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 20 000 руб.</h3>
+                  <b>Реверс-инжиниринг изделия</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 60 000 руб.</h3>
+                  <b>Реверс-инжиниринг устройства</b>
+                </li>
+              </ul>
+              <p>Указана ориентировочная стоимость работ, для точного расчета направьте ТЗ нам на <a href="[[$href_email]]">почту</a></p>
+              <div id="openFormbutton" class="promo__link btn">Оставить заявку</div>
+            </div>
+          </div>
+          <div class="price__wrapper-service">
+            <div class="price__container container">
+              <h3>3D-сканирование</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <h3>от 8 000 руб.</h3>
+                  <b>3D-сканирование с точностью 200 мкм</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 10 000 руб.</h3>
+                  <b>3D-сканирование с точностью 20 мкм</b>
+                </li>
+              </ul>
+              <p>Указана ориентировочная стоимость работ, для точного расчета направьте ТЗ нам на <a href="[[$href_email]]">почту</a></p>
+              <div id="openFormbutton" class="promo__link btn">Оставить заявку</div>
+            </div>
+          </div>
+          <div class="price__wrapper-service">
+            <div class="price__container container">
+              <h3>Чертежи</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <h3>от 3 000 руб.</h3>
+                  <b>Чертеж формата А4</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 5 000 руб.</h3>
+                  <b>Чертеж формата А3</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 9 000 руб.</h3>
+                  <b>Чертёж формата А1</b>
+                </li>
+              </ul>
+              <p>Указана ориентировочная стоимость работ, для точного расчета направьте ТЗ нам на <a href="[[$href_email]]">почту</a></p>
+              <div id="openFormbutton" class="promo__link btn">Оставить заявку</div>
+            </div>
+          </div>
+          <div class="price__wrapper-service">
+            <div class="price__container container">
+              <h3>Векторизация</h3>
+              <ul class="price__list">
+                <li class="price__item">
+                  <h3>от 500 руб.</h3>
+                  <b>Оцифровка формат А4</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 1 000 руб.</h3>
+                  <b>Отрисовка формат А4</b>
+                </li>
+                <li class="price__item">
+                  <h3>от 5 000 руб.</h3>
+                  <b>Оцифровка формат А1</b>
+                </li>
+              </ul>
+              <p>Указана ориентировочная стоимость работ, для точного расчета направьте ТЗ нам на <a href="[[$href_email]]">почту</a></p>
+              <div id="openFormbutton" class="promo__link btn">Оставить заявку</div>
+            </div>
+          </div>
+      </section>
+      <section class="main-services__advantages advantages">
+        <div class="advantages__container container">
+          <h3 class="advantages__title">Преимущества работы с нами</h3>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--first">
+              <b class="advantages__item-title">Гибкий подход</b>
+              <p class="advantages__item-description">Нам Важен результат!</p>
+              <p class="advantages__item-description">Учитываем все пожелания заказчика даже если они появляются<br>в процессе проектирования.</p>
+              <p class="advantages__item-description">Вносим все правки!</p>
+            </li>
+            <li class="advantages__item advantages__item--second">
+              <b class="advantages__item-title">Конфиденциальность</b>
+              <p class="advantages__item-description">Подписываем соглашение о неразглашении.</p>
+              <p class="advantages__item-description">Вы являетесь правообладателем изделия!</p>
+            </li>
+            <li class="advantages__item advantages__item--third">
+              <b class="advantages__item-title">Оперативная связь</b>
+              <p class="advantages__item-description">Менеджер всегда на связи <br>по телефону и whatsapp:</p>
+              <a href="tel:88001234567" class="advantages__link">8 (800) 123 45 67</a>
+              <a href="#" class="advantages__whatsapp">whatsapp</a>
+            </li>
+            <li class="advantages__item advantages__item--fouth">
+              <b class="advantages__item-title">Гарантия</b>
+              <p class="advantages__item-description">Все работы оформляются через договор.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-services__message message">
+        <div class="message__container container">
+          <h2 class="message__title">Напишите нам</h2>
+          <p class="message__text">Если у вас остались вопросы по проекту, заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <button type="button" class="message__button btn">Задать вопрос</button>
+        </div>
+      </section>
+      <section class="main-services__progress progress">
+        <div class="progress__container container">
+          <h2 class="visually-hidden">Достижения</h2>
+          <ul class="progress__list">
+            <li class="progress__item">
+              <b>230</b>
+              <p>довольных<br>клиентов</p>
+            </li>
+            <li class="progress__item">
+              <b>>50</b>
+              <p>профессионалов<br>в команде</p>
+            </li>
+            <li class="progress__item">
+              <b>320</b>
+              <p>выполненных<br>проектов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-services__plan plan">
+        <div class="plan__container container">
+          <h2 class="plan__title">Порядок выполнения конструкторских работ</h2>
+          <ol class="plan__list">
+            <li class="plan__item">
+              <b>Сбор исходных данных</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item"><a href="#">Техническое задание</a> на проектирование</li>
+                <li class="plan__sublist-item">Эскиз / Фото / Видео аналогов</li>
+                <li class="plan__sublist-item">Образцы деталей</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Оценка задания</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Уточнения по ТЗ</li>
+                <li class="plan__sublist-item"> Встреча с инженером-конструктором, при необходимости</li>
+                <li class="plan__sublist-item">Расчёт объема, бюджета и сроков выполнения</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Документальное оформление</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Согласование и подписание <a href="#">Договора</a> и приложений к нему</li>
+                <li class="plan__sublist-item">Оплата</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Выполнение проекта</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">3D-моделирование</li>
+                <li class="plan__sublist-item">Согласование</li>
+                <li class="plan__sublist-item">Внесение правок, при необходимости</li>
+                <li class="plan__sublist-item">Разработка КД</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Проверка конструкторской документации</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Нормоконтроль</li>
+                <li class="plan__sublist-item">Технологический контроль</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Предоставление результата разработки</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Направление результата в необходимом формате</li>
+                <li class="plan__sublist-item">Приемка комплекта Заказчиком</li>
+              </ul>
+            </li>
+            <li class="plan__item">
+              <b>Запуск и конструкторское сопровождение производства</b>
+              <ul class="plan__sublist">
+                <li class="plan__sublist-item">Изготовление опытного образца</li>
+                <li class="plan__sublist-item">Приемо-сдаточные испытания</li>
+                <li class="plan__sublist-item">Сопровождение серийного производства</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="main-services__portfolio portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title">Наше портфолио</h2>
+          <ul class="portfolio__list-group">
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link portfolio__item-link--active">Все</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Оборудование</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Механизмы</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Реверс-инжиниринг</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Стартапы</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Металлоконструкции</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">КМД</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Электротехническое проектирование</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Технологическая документация</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Технологическая оснастка</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Штампы</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">Промышленный дизайн 3</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">3D-моделирование</a></li>
+            <li class="portfolio__item-group"><a href="#" class="portfolio__item-link">3D-визуализация</a></li>
+          </ul>
+          <ul class="portfolio__pagination-list">
+            <li class="portfolio__pagination-item"><button class="portfolio__pagination-button portfolio__pagination-button--prev"><span class="visually-hidden">Предыдущий слайд</span></button></li>
+            <li class="portfolio__pagination-item"><button class="portfolio__pagination-button portfolio__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
+          </ul>
+          <ul class="portfolio__list-img">
+            <li class="portfolio__item-img">
+              <img src="img/img_1.jpg" srcset="img/img_1@2x.jpg" alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_2.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_3.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_4.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_5.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+            <li class="portfolio__item-img">
+              <img src="img/img_6.jpg"  alt="Портфолио чертеж" width="290" height="290">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-services__reviews reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title">Отзывы наших клиентов</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <ul class="reviews__list-star">
+                <li class="reviews__item-star">
+                  <svg class="reviews__star reviews__star--rate"  width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.58059 1.71993C8.92218 0.898636 10.0856 0.898636 10.4272 1.71993L11.9144 5.29546C12.0584 5.6417 12.384 5.87827 12.7578 5.90823L16.6179 6.2177C17.5045 6.28878 17.8641 7.39529 17.1885 7.97396L14.2475 10.4932C13.9627 10.7372 13.8384 11.1199 13.9254 11.4847L14.8239 15.2515C15.0303 16.1167 14.089 16.8006 13.3299 16.3369L10.0252 14.3184C9.70514 14.1229 9.30267 14.1229 8.98265 14.3184L5.67788 16.3369C4.91878 16.8006 3.97753 16.1167 4.18391 15.2515L5.08243 11.4847C5.16944 11.1199 5.04507 10.7372 4.76028 10.4932L1.8193 7.97396C1.14376 7.39529 1.50329 6.28878 2.38994 6.2177L6.25003 5.90823C6.62382 5.87827 6.94943 5.6417 7.09344 5.29546L8.58059 1.71993Z" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star reviews__star--rate"  width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.58059 1.71993C8.92218 0.898636 10.0856 0.898636 10.4272 1.71993L11.9144 5.29546C12.0584 5.6417 12.384 5.87827 12.7578 5.90823L16.6179 6.2177C17.5045 6.28878 17.8641 7.39529 17.1885 7.97396L14.2475 10.4932C13.9627 10.7372 13.8384 11.1199 13.9254 11.4847L14.8239 15.2515C15.0303 16.1167 14.089 16.8006 13.3299 16.3369L10.0252 14.3184C9.70514 14.1229 9.30267 14.1229 8.98265 14.3184L5.67788 16.3369C4.91878 16.8006 3.97753 16.1167 4.18391 15.2515L5.08243 11.4847C5.16944 11.1199 5.04507 10.7372 4.76028 10.4932L1.8193 7.97396C1.14376 7.39529 1.50329 6.28878 2.38994 6.2177L6.25003 5.90823C6.62382 5.87827 6.94943 5.6417 7.09344 5.29546L8.58059 1.71993Z" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star reviews__star--rate"  width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.58059 1.71993C8.92218 0.898636 10.0856 0.898636 10.4272 1.71993L11.9144 5.29546C12.0584 5.6417 12.384 5.87827 12.7578 5.90823L16.6179 6.2177C17.5045 6.28878 17.8641 7.39529 17.1885 7.97396L14.2475 10.4932C13.9627 10.7372 13.8384 11.1199 13.9254 11.4847L14.8239 15.2515C15.0303 16.1167 14.089 16.8006 13.3299 16.3369L10.0252 14.3184C9.70514 14.1229 9.30267 14.1229 8.98265 14.3184L5.67788 16.3369C4.91878 16.8006 3.97753 16.1167 4.18391 15.2515L5.08243 11.4847C5.16944 11.1199 5.04507 10.7372 4.76028 10.4932L1.8193 7.97396C1.14376 7.39529 1.50329 6.28878 2.38994 6.2177L6.25003 5.90823C6.62382 5.87827 6.94943 5.6417 7.09344 5.29546L8.58059 1.71993Z" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star reviews__star--rate"  width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.58059 1.71993C8.92218 0.898636 10.0856 0.898636 10.4272 1.71993L11.9144 5.29546C12.0584 5.6417 12.384 5.87827 12.7578 5.90823L16.6179 6.2177C17.5045 6.28878 17.8641 7.39529 17.1885 7.97396L14.2475 10.4932C13.9627 10.7372 13.8384 11.1199 13.9254 11.4847L14.8239 15.2515C15.0303 16.1167 14.089 16.8006 13.3299 16.3369L10.0252 14.3184C9.70514 14.1229 9.30267 14.1229 8.98265 14.3184L5.67788 16.3369C4.91878 16.8006 3.97753 16.1167 4.18391 15.2515L5.08243 11.4847C5.16944 11.1199 5.04507 10.7372 4.76028 10.4932L1.8193 7.97396C1.14376 7.39529 1.50329 6.28878 2.38994 6.2177L6.25003 5.90823C6.62382 5.87827 6.94943 5.6417 7.09344 5.29546L8.58059 1.71993Z" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+                <li class="reviews__item-star">
+                  <svg class="reviews__star"  width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.58059 1.71993C8.92218 0.898636 10.0856 0.898636 10.4272 1.71993L11.9144 5.29546C12.0584 5.6417 12.384 5.87827 12.7578 5.90823L16.6179 6.2177C17.5045 6.28878 17.8641 7.39529 17.1885 7.97396L14.2475 10.4932C13.9627 10.7372 13.8384 11.1199 13.9254 11.4847L14.8239 15.2515C15.0303 16.1167 14.089 16.8006 13.3299 16.3369L10.0252 14.3184C9.70514 14.1229 9.30267 14.1229 8.98265 14.3184L5.67788 16.3369C4.91878 16.8006 3.97753 16.1167 4.18391 15.2515L5.08243 11.4847C5.16944 11.1199 5.04507 10.7372 4.76028 10.4932L1.8193 7.97396C1.14376 7.39529 1.50329 6.28878 2.38994 6.2177L6.25003 5.90823C6.62382 5.87827 6.94943 5.6417 7.09344 5.29546L8.58059 1.71993Z" stroke-linejoin="round"/>
+                  </svg>
+                </li>
+              </ul>
+              <p class="reviews__text">Сотрудники компании быстро и качественно разработали всю необходимую конструкторскую документацию для моего проекта. Особую благодарность хочу выразить инженеру-конструктору Олегу Смирнову, который оказывал конструкторскую поддержку на этапе производства.</p>
+              <p class="reviews__author">Иван Сергеевич Иванов</p>
+              <p class="reviews__company"><a href="#">ООО «Проект»</a></p>
+              <p class="reviews__date">24.05.2023</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="reviews__pagination-list">
+          <li class="reviews__pagination-item"><button class="reviews__pagination-button reviews__pagination-button--prev"><span class="visually-hidden">Предыдущий слайд</span></button></li>
+          <li class="reviews__pagination-item"><button class="reviews__pagination-button reviews__pagination-button--next"><span class="visually-hidden">Следующий слайд</span></button></li>
+        </ul>
+      </section>
+      <section class="main-services__about about">
+        <div class="about__container container">
+          <h2 class="about__title">О компании</h2>
+          <div class="about__wrapper">
+            <div class="about__wrapper--grid1">
+              <p class="about__text about__text--grid1">Проектно-конструкторское бюро FastProject оказывает услуги по разработке конструкторской, технологической и эксплуатационной документации. Мы работаем как на аутсорсинге, так и проектно.</p>
+              <p class="about__text about__text--grid1">Конструкторское бюро FastProject реализовывает проекты в сфере машиностроения, охранных и противопожарных систем. Мы осуществляем полный цикл создания нового продукта — от идеи до производства:</p>
+              <ul class="about__text about__text--grid1">
+                <li>помогаем с подготовкой технического задания,</li>
+                <li>подготавливаем техническую документацию,</li>
+                <li>разрабатываем рабочую документацию, </li>
+                <li>составляем проектно-сметную документацию,</li>
+                <li>согласовываем в государственных органах и госэкспертизе,</li>
+                <li>производим техническое сопровождение проекта.</li>
+              </ul>
+            </div>
+            <div class="about__wrapper--grid2">
+              <p class="about__text about__text--grid2">Большинство вопросов и задач решаем дистанционно, а также выезжаем на объект. <br><br>Наши инженеры имеют профильное образование и богатый опыт ( от 15 лет) проектирования и запуска в производство. Мы всегда находим оптимальное решения поставленных задач, обеспечиваем соответствие качества продукции и услуг ожиданиям заказчика, договорным обязательствам, нормативно-технической документации и международным стандартам!<br><br>FastProject входит в группу компаний Fastgroup, которая начала свою историю с 1995 года и зарекомендовала себя не только на территории РФ, но и за ее пределами. <br><br>Имеем свое представительство в крупных городах России : Москва, Санкт-Петербург, а так же и за границей: Объединённые Арабские Эмираты (Дубай), Казахстан (Астана, Атырау, Кызыл-Орда, Актау, Уральск, Актобе). <br><br>Собственные производственные базы в: Москве, Твери, Новосибирске, Алмате, Атыра.</p>
+            </div>
+          </div>  
+        </div>
+      </section>
+      <section class="main-services__partners partners">
+        <div class="partners__container container">
+          <h2 class="partners__title">Нам доверяют</h2>
+          <ul class="partners__list">
+            <li class="partners__items">
+              <img class="partners__logo" src="img/kgm.svg" alt="kgm" width="146" height="39">
+            </li>
+            <li class="partners__items">
+              <img class="partners__logo" src="img/trasneft.svg" alt="kgm" width="120" height="35">
+            </li>
+          </ul>
+          <p class="partners__text">Мы уже работаем с крупными компаниями как Газпром, Роснефть, Транснефть, КазТрансОил, CPPE, CNPC, WPK, KGM и др. и открыты для сотрудничества как с компаниями и промышленными организациями, так и с частными лицами по всей России и за ее пределами.</p>
+        </div>
+      </section>
+      <section class="main-services__documents documents">
+        <div class="documents__container container">
+          <h2 class="documents__title">Компания FastProject имеет</h2>
+          <ul class="documents__list">
+            <li class="documents__item">Сертификат качества ИСО 9001-2015</li>
+            <li class="documents__item">Лицензию «Проектирования систем противопожарной защиты»</li>
+            <li class="documents__item">Лицензию «Производство и реализация противопожарной техники и оборудования»</li>
+            <li class="documents__item">Лицензию «Экспертиза технических решений»</li>
+            <li class="documents__item">Лицензию «Выполнение строительных и монтажных работ»</li>
+            <li class="documents__item">Лицензию «Выполнение технического обслуживания противопожарных средств»</li>
+          </ul>
+        </div>
+      </section>
+      <section class="main-services__form form">
+        <div class="form__container container">
+          <h2 class="form__title">Обсудить проект</h2>
+          <p class="form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <form action="#" class="form__date" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <label class="form__label form__label--name">
+                <input name="name" type="text" class="form__input" placeholder="Ваше имя*" required>
+              </label>
+              <label class="form__label form__label--email">
+                <input name="email" type="email" class="form__input" placeholder="Электронная почта*" required>
+              </label>
+              <label class="form__label form__label--phone">
+                <input name="tel" type="tel" class="form__input" placeholder="Телефон*" required>
+              </label>
+              <label class="form__label form__label--company">
+                <input name="company" type="text" class="form__input" placeholder="Компания">
+              </label>
+              <label class="form__label form__label--inn">
+                <input name="inn" type="text" class="form__input" placeholder="ИНН">
+              </label>
+              <label class="form__label form__label--message">
+                <textarea name="message" id="form__message" class="form__textarea" placeholder="Ваше сообщение*"></textarea>
+              </label>
+              <div class="form__file-content">
+                <input name="file" type="file" class="form__file">
+                <span class="form__file-check">Прикрепить файл</span>
+                <span class="form__file-info">(до 6 файлов, до 2 Мб)</span>
+              </div>
+              <label class="form__label-checkbox">
+                <input name="check" type="checkbox" class="visually-hidden">\
+                <span>Я согласен на обработку персональных данных</span>
+              </label>
+            </fieldset>
+            <button class="form__submit btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <section class="main-services__contacts contacts">
+        <div class="contacts__container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__wrapper-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1643282831751!5m2!1sru!2sru" allowfullscreen="" title="Адресс html Academy" class="contacts__map"></iframe>
+            <img class="contacts__img contacts__img--nojs" src="img/google_map.jpg" srcset="img/google_map@2x.jpg" alt="Контакты" width="360" height="360">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__container container">
+        <div class="footer__logo">
+          <a href="index.html" class="footer__link-logo">
+            <svg width="140" height="42" viewBox="0 0 140 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1094 23.3655H17.1327L25.7544 14.7021H10.1094V23.3655Z" fill="#00A0E3"/>
+              <path d="M10.8671 22.6048H16.8203L23.9284 15.4623H10.8671V22.6048ZM17.1336 24.1257H9.35352V13.9414H27.5821L17.4469 24.1257H17.1336Z" fill="#00A0E3"/>
+              <path class="footer__svg--color1" d="M10.1097 11.1311H9.35305V9.61017H29.7521L37.5916 1.73281H1.51358V37.985L10.0781 29.3793L11.1481 30.4544L0 41.6565V0.211914H41.2454L30.3788 11.1311H10.1097Z"/>
+              <path d="M57.0761 5.53044V10.6301H67.2592V15.6965H57.0761V23.6441H50.5508V0.463867H68.6434V5.53044H57.0761Z" fill="#00A0E3"/>
+              <path d="M86.4569 19.1406H76.7019L74.8895 23.6441H68.2324L78.4157 0.463867H84.8421L95.0583 23.6441H88.2695L86.457 19.1406H86.4569ZM84.5454 14.3058L81.5794 6.88809L78.6134 14.3058H84.5454Z" fill="#00A0E3"/>
+              <path d="M106.85 24.1079C104.982 24.1079 103.17 23.8759 101.412 23.4124C99.6546 22.9487 98.2265 22.3307 97.1279 21.5579L99.27 16.7233C100.303 17.4077 101.5 17.9596 102.862 18.3789C104.224 18.7984 105.564 19.0082 106.883 19.0082C109.387 19.0082 110.64 18.3789 110.64 17.1206C110.64 16.4582 110.283 15.9672 109.569 15.647C108.854 15.3268 107.707 14.9902 106.125 14.6369C104.389 14.2616 102.939 13.8587 101.775 13.4281C100.61 12.9977 99.6108 12.3078 98.7758 11.3586C97.941 10.4091 97.5235 9.1288 97.5235 7.51719C97.5235 6.10424 97.908 4.82946 98.6771 3.69228C99.446 2.55549 100.594 1.65581 102.121 0.99345C103.648 0.331086 105.521 0 107.74 0C109.256 0 110.75 0.171093 112.222 0.513279C113.694 0.855466 114.99 1.35784 116.111 2.02001L114.1 6.88774C111.903 5.69583 109.772 5.09949 107.707 5.09949C106.411 5.09949 105.466 5.2926 104.873 5.67918C104.279 6.06558 103.983 6.56776 103.983 7.18572C103.983 7.80388 104.334 8.2674 105.037 8.57647C105.74 8.88555 106.872 9.20554 108.432 9.53662C110.189 9.91192 111.645 10.315 112.798 10.7454C113.952 11.176 114.951 11.8602 115.797 12.7985C116.643 13.7366 117.066 15.0116 117.066 16.6232C117.066 18.014 116.682 19.2725 115.913 20.3984C115.144 21.5242 113.99 22.4237 112.452 23.0972C110.914 23.7707 109.047 24.1073 106.85 24.1073V24.1079Z" fill="#00A0E3"/>
+              <path d="M126.422 5.66269H119.337V0.463867H140V5.66269H132.947V23.6441H126.422V5.66269Z" fill="#00A0E3"/>
+              <path class="footer__svg--color1" d="M55.4959 29.1132C57.1382 29.1132 58.4303 29.5075 59.3723 30.2963C60.3141 31.085 60.7851 32.1713 60.7851 33.5544C60.7851 34.9379 60.3141 36.0237 59.3723 36.8124C58.4303 37.6011 57.1382 37.9955 55.4959 37.9955H52.362V41.8543H50.5508V29.1132H55.496H55.4959ZM55.4416 36.412C56.5887 36.412 57.4642 36.1663 58.068 35.6749C58.6719 35.1834 58.9738 34.4766 58.9738 33.5544C58.9738 32.6321 58.6719 31.9253 58.068 31.4339C57.4642 30.9424 56.5887 30.6969 55.4416 30.6969H52.362V36.4122H55.4416V36.412ZM71.9254 41.8543L69.1902 37.941C68.852 37.9653 68.5863 37.9775 68.3932 37.9775H65.2593V41.8545H63.4481V29.1134H68.3933C70.0357 29.1134 71.3277 29.5077 72.2698 30.2965C73.2116 31.0852 73.6826 32.1715 73.6826 33.5546C73.6826 34.5375 73.4409 35.3746 72.9579 36.0664C72.4749 36.7581 71.7866 37.2616 70.8927 37.577L73.8999 41.8545H71.9254V41.8543ZM68.3389 36.4302C69.486 36.4302 70.3615 36.1814 70.9653 35.6839C71.5692 35.1863 71.8711 34.4764 71.8711 33.5542C71.8711 32.6319 71.5692 31.9252 70.9653 31.4337C70.3615 30.9422 69.486 30.6967 68.3389 30.6967H65.2593V36.4302H68.3389ZM82.341 41.9999C81.061 41.9999 79.9075 41.7179 78.8811 41.1537C77.8546 40.5895 77.0486 39.8098 76.4629 38.8148C75.8774 37.8198 75.5845 36.7095 75.5845 35.4839C75.5845 34.2583 75.8774 33.1481 76.4629 32.1529C77.0486 31.1579 77.8546 30.3782 78.8811 29.8141C79.9075 29.2499 81.061 28.9678 82.341 28.9678C83.6091 28.9678 84.7562 29.2499 85.7826 29.8141C86.809 30.3782 87.6122 31.1549 88.1919 32.1439C88.7717 33.1328 89.0614 34.2462 89.0614 35.4839C89.0614 36.7215 88.7717 37.835 88.1919 38.8238C87.6122 39.8127 86.809 40.5893 85.7826 41.1537C84.7562 41.7179 83.6089 41.9999 82.341 41.9999ZM82.341 40.3801C83.2708 40.3801 84.1071 40.1677 84.8497 39.743C85.5925 39.3183 86.178 38.7327 86.6067 37.9865C87.0355 37.2401 87.2497 36.4059 87.2497 35.4837C87.2497 34.5614 87.0355 33.7272 86.6067 32.9808C86.178 32.2346 85.5925 31.649 84.8497 31.2243C84.1071 30.7997 83.2708 30.5872 82.341 30.5872C81.4112 30.5872 80.5688 30.7997 79.8142 31.2243C79.0592 31.649 78.4677 32.2346 78.0389 32.9808C77.6102 33.7272 77.396 34.5614 77.396 35.4837C77.396 36.4059 77.6102 37.2401 78.0389 37.9865C78.4677 38.7327 79.0592 39.3183 79.8142 39.743C80.569 40.1677 81.4112 40.3801 82.341 40.3801ZM110.327 40.2708V41.8545H101.125V29.1134H110.074V30.6971H102.937V34.6102H109.295V36.1573H102.937V40.2708H110.327ZM118.877 42.0001C117.609 42.0001 116.465 41.718 115.444 41.1539C114.424 40.5897 113.624 39.8131 113.044 38.824C112.465 37.8351 112.175 36.7215 112.175 35.484C112.175 34.2462 112.465 33.133 113.044 32.1441C113.624 31.1552 114.427 30.3786 115.454 29.8142C116.48 29.2501 117.627 28.968 118.895 28.968C119.885 28.968 120.791 29.1348 121.612 29.4686C122.434 29.8022 123.134 30.2967 123.714 30.952L122.536 32.0987C121.582 31.0915 120.393 30.588 118.968 30.588C118.026 30.588 117.174 30.8004 116.414 31.2251C115.653 31.6498 115.058 32.2354 114.63 32.9816C114.201 33.728 113.987 34.5622 113.987 35.4844C113.987 36.4067 114.201 37.2409 114.63 37.9873C115.058 38.7335 115.653 39.3191 116.414 39.7438C117.174 40.1684 118.026 40.3809 118.968 40.3809C120.38 40.3809 121.57 39.8712 122.536 38.8518L123.714 39.9985C123.134 40.6538 122.431 41.1514 121.603 41.4911C120.776 41.8308 119.868 42.0007 118.877 42.0007V42.0001ZM128.677 30.6969H124.329V29.1132H134.817V30.6969H130.47V41.8545H128.677V30.6969H128.677ZM93.8253 42.0001C93.0646 42.0001 92.358 41.8394 91.7059 41.5179C91.0538 41.1961 90.5285 40.7443 90.1298 40.1617L91.1804 38.9239C91.8807 39.9311 92.7625 40.4347 93.8251 40.4347C94.5376 40.4347 95.078 40.2163 95.4463 39.7794C95.8147 39.3424 95.9988 38.6996 95.9988 37.8501V30.6969H91.416V29.1132H97.7922V37.759C97.7922 39.1666 97.457 40.2253 96.7868 40.9351C96.1165 41.6449 95.1292 41.9999 93.8251 41.9999L93.8253 42.0001Z"/>
+              <path class="footer__svg--color1" d="M6.55606 1.16211V3.38881H5.04248V1.16211H6.55606ZM28.1082 1.16211V4.51814H26.5946V1.16211H28.1082ZM19.4873 1.16211V4.51814H17.9737V1.16211H19.4873ZM10.8663 1.16211V4.51814H9.35275V1.16211H10.8663ZM32.419 1.16211V3.38881H30.9055V1.16211H32.419ZM23.7975 1.16211V3.38881H22.284V1.16211H23.7975ZM15.1766 1.16211V3.38881H13.663V1.16211H15.1766Z"/>
+              <path class="footer__svg--color1" d="M0.945801 31.2665H3.16179V32.7874H0.945801V31.2665ZM0.945801 5.27832H3.16179V6.79921H0.945801V5.27832ZM0.945801 9.61019H4.28569V11.1311H0.945801V9.61019ZM0.945801 18.2728H4.28569V19.7937H0.945801V18.2728ZM0.945801 26.9354H4.28569V28.4563H0.945801V26.9354ZM0.945801 13.9415H3.16179V15.4624H0.945801V13.9415ZM0.945801 22.6041H3.16179V24.125H0.945801V22.6041Z"/>
+            </svg>
+            <span>конструкторское<br>бюро общего<br>машиностроения</span>
+          </a>
+        </div>
+        <div class="footer__wrapper-menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О компании</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Портфолио</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Цены</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Заказчикам</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Новости</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+          </ul>
+          <h3 class="footer__title">Услуги</h3>
+          <ul class="footer__services-list">
+            <li class="footer__services-item"><a href="constructor.html" class="footer__services-link">Конструкторские услуги</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">3D-моделирование и промышленный дизайн</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Технологические услуги</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Измерительные услуги</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Техническая документация</a></li>
+            <li class="footer__services-item"><a href="" class="footer__services-link">Разработка документации для регистрации и сертификации продукции</a></li>
+          </ul>
+        </div>
+        <div class="footer__wrapper-info">
+          <a href="tel:89055600075" class="footer__link">8 (905) 560 00 75</a>
+          <button class="footer__callback-phone btn-link">Заказать обратный звонок</button>
+          <a href="https://vk.com" class="footer__social">мы в соцсетях</a>
+          <a href="mailto:info@fastproj.ru" class="footer__link-email">info@fastproj.ru</a>
+        </div>
+        <div class="footer__wrapper-policy">
+          <a href="#" class="footer__policy">Политика конфиденциальности</a>
+          <p class="footer__text">© 2007-2023 Fast Project. Все ыправа защищены</p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-call modal-call--close">
+      <div class="modal-call__wrapper">
+        <div class="modal-call__container">
+          <button class="modal-call__button">
+            <span class="visually-hidden">Закрыть модально окно</span>
+          </button>
+          <h2 class="modal-call__title">Заказать обратный звонок</h2>
+          <form action="#" class="modal-call__form" method="get">
+            <label class="modal-call__label-name">
+              <input type="text" class="modal-call__name" placeholder="Ваше имя*" required>
+            </label>
+            <label class="modal-call__label-phone">
+              <input type="tel" class="modal-call__phone" placeholder="Телефон*" required>
+            </label>
+            <label class="modal-call__label-date">
+              <input type="text" class="modal-call__date" placeholder="Удобное время">
+            </label>
+            <button class="modal-call__submit btn" type="submit">Заказать звонок</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal-form modal-form--close">
+      <div class="modal-form__wrapper">
+        <div class="modal-form__container">
+          <button class="modal-form__button">
+            <span class="visually-hidden">Закрыть модально окно</span>
+          </button>
+          <h2 class="modal-form__title">Напишите нам</h2>
+          <p class="modal-form__text">Заполните форму, и наш менеджер свяжется с Вами и подробно проконсультирует</p>
+          <form action="#" class="modal-form__date" method="post">
+            <fieldset class="modal-form__fieldset">
+              <legend class="visually-hidden">Данные пользователя</legend>
+              <label class="modal-form__label modal-form__label--name">
+                <input name="name" type="text" class="modal-form__input" placeholder="Ваше имя*" required>
+              </label>
+              <label class="modal-form__label modal-form__label--email">
+                <input name="email" type="email" class="modal-form__input" placeholder="Электронная почта*" required>
+              </label>
+              <label class="modal-form__label modal-form__label--phone">
+                <input name="tel" type="tel" class="modal-form__input" placeholder="Телефон*" required>
+              </label>
+              <label class="modal-form__label modal-form__label--company">
+                <input name="company" type="text" class="modal-form__input" placeholder="Компания">
+              </label>
+              <label class="modal-form__label modal-form__label--inn">
+                <input name="inn" type="text" class="modal-form__input" placeholder="ИНН">
+              </label>
+              <label class="modal-form__label modal-form__label--message">
+                <textarea name="message" id="modal-form__message" class="modal-form__textarea" placeholder="Ваше сообщение*"></textarea>
+              </label>
+              <div class="modal-form__file-content">
+                <input name="file" type="file" class="modal-form__file">
+                <span class="modal-form__file-check">Прикрепить файл</span>
+                <span class="modal-form__file-info">(до 6 файлов, до 2 Мб)</span>
+              </div>
+              <label class="modal-form__label-checkbox">
+                <input name="check" type="checkbox" class="visually-hidden">
+                <span>Я согласен на обработку персональных данных</span>
+              </label>
+            </fieldset>
+            <button class="modal-form__submit btn" type="submit">Заказать услугу</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/assets/js/swipper_call.js?[[$version]]"></script>
+  </body>
+</html>
